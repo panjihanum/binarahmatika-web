@@ -1,0 +1,353 @@
+{
+  "images": [
+    {
+      "base": "angga",
+      "output": "optimized/images/angga.webp",
+      "source": "raw/images/angga.png",
+      "skipped": []
+    },
+    {
+      "base": "bina-rahmatika",
+      "output": "optimized/images/bina-rahmatika.webp",
+      "source": "raw/images/bina-rahmatika.jpeg",
+      "skipped": [
+        "raw/images/bina-rahmatika-225x300.jpeg"
+      ]
+    },
+    {
+      "base": "bina-rahmatika-g",
+      "output": "optimized/images/bina-rahmatika-g.webp",
+      "source": "raw/images/bina-rahmatika-g.jpeg",
+      "skipped": [
+        "raw/images/bina-rahmatika-g-1097x1536.jpeg",
+        "raw/images/bina-rahmatika-g-214x300.jpeg",
+        "raw/images/bina-rahmatika-g-732x1024.jpeg",
+        "raw/images/bina-rahmatika-g-768x1075.jpeg"
+      ]
+    },
+    {
+      "base": "bina-rahmatika-group",
+      "output": "optimized/images/bina-rahmatika-group.webp",
+      "source": "raw/images/bina-rahmatika-group.jpeg",
+      "skipped": [
+        "raw/images/bina-rahmatika-group-1024x576.jpeg",
+        "raw/images/bina-rahmatika-group-300x169.jpeg",
+        "raw/images/bina-rahmatika-group-768x432.jpeg"
+      ]
+    },
+    {
+      "base": "binarahmatika21",
+      "output": "optimized/images/binarahmatika21.webp",
+      "source": "raw/images/binarahmatika21.jpg",
+      "skipped": [
+        "raw/images/binarahmatika21-1024x759.jpg",
+        "raw/images/binarahmatika21-300x223.jpg",
+        "raw/images/binarahmatika21-768x570.jpg"
+      ]
+    },
+    {
+      "base": "binarahmatika38",
+      "output": "optimized/images/binarahmatika38.webp",
+      "source": "raw/images/binarahmatika38.jpg",
+      "skipped": [
+        "raw/images/binarahmatika38-1024x768.jpg",
+        "raw/images/binarahmatika38-300x225.jpg",
+        "raw/images/binarahmatika38-768x576.jpg"
+      ]
+    },
+    {
+      "base": "binarahmatika49",
+      "output": "optimized/images/binarahmatika49.webp",
+      "source": "raw/images/binarahmatika49.jpg",
+      "skipped": [
+        "raw/images/binarahmatika49-1024x765.jpg",
+        "raw/images/binarahmatika49-300x224.jpg",
+        "raw/images/binarahmatika49-768x574.jpg"
+      ]
+    },
+    {
+      "base": "BRG11",
+      "output": "optimized/images/BRG11.webp",
+      "source": "raw/images/BRG11.png",
+      "skipped": [
+        "raw/images/BRG11-300x200.png",
+        "raw/images/BRG11-768x512.png"
+      ]
+    },
+    {
+      "base": "BRG13-1",
+      "output": "optimized/images/BRG13-1.webp",
+      "source": "raw/images/BRG13-1.png",
+      "skipped": [
+        "raw/images/BRG13-1-300x196.png",
+        "raw/images/BRG13-1-768x501.png"
+      ]
+    },
+    {
+      "base": "erni",
+      "output": "optimized/images/erni.webp",
+      "source": "raw/images/erni.png",
+      "skipped": []
+    },
+    {
+      "base": "injeksi-betone",
+      "output": "optimized/images/injeksi-betone.webp",
+      "source": "raw/images/injeksi-betone.png",
+      "skipped": [
+        "raw/images/injeksi-betone-300x217.png"
+      ]
+    },
+    {
+      "base": "Injeksi-grouting-10",
+      "output": "optimized/images/Injeksi-grouting-10.webp",
+      "source": "raw/images/Injeksi-grouting-10.png",
+      "skipped": [
+        "raw/images/Injeksi-grouting-10-300x219.png"
+      ]
+    },
+    {
+      "base": "INJEKSI-GROUTING-2-1080x590-1",
+      "output": "optimized/images/INJEKSI-GROUTING-2-1080x590-1.webp",
+      "source": "raw/images/INJEKSI-GROUTING-2-1080x590-1.jpg",
+      "skipped": [
+        "raw/images/INJEKSI-GROUTING-2-1080x590-1-1024x559.jpg",
+        "raw/images/INJEKSI-GROUTING-2-1080x590-1-300x164.jpg",
+        "raw/images/INJEKSI-GROUTING-2-1080x590-1-768x420.jpg"
+      ]
+    },
+    {
+      "base": "Injeksi-grouting-2",
+      "output": "optimized/images/Injeksi-grouting-2.webp",
+      "source": "raw/images/Injeksi-grouting-2.png",
+      "skipped": [
+        "raw/images/Injeksi-grouting-2-300x214.png"
+      ]
+    },
+    {
+      "base": "Injeksi-grouting",
+      "output": "optimized/images/Injeksi-grouting.webp",
+      "source": "raw/images/Injeksi-grouting.png",
+      "skipped": [
+        "raw/images/Injeksi-grouting-300x223.png"
+      ]
+    },
+    {
+      "base": "injeksi-grouting-4",
+      "output": "optimized/images/injeksi-grouting-4.webp",
+      "source": "raw/images/injeksi-grouting-4.png",
+      "skipped": [
+        "raw/images/injeksi-grouting-4-300x203.png",
+        "raw/images/injeksi-grouting-4-768x519.png"
+      ]
+    },
+    {
+      "base": "Injeksi-grouting-7",
+      "output": "optimized/images/Injeksi-grouting-7.webp",
+      "source": "raw/images/Injeksi-grouting-7.png",
+      "skipped": [
+        "raw/images/Injeksi-grouting-7-300x219.png"
+      ]
+    },
+    {
+      "base": "injeksi-groutinng-2",
+      "output": "optimized/images/injeksi-groutinng-2.webp",
+      "source": "raw/images/injeksi-groutinng-2.png",
+      "skipped": [
+        "raw/images/injeksi-groutinng-2-300x209.png"
+      ]
+    },
+    {
+      "base": "injeksi-polyurethane-9",
+      "output": "optimized/images/injeksi-polyurethane-9.webp",
+      "source": "raw/images/injeksi-polyurethane-9.jpeg",
+      "skipped": [
+        "raw/images/injeksi-polyurethane-9-141x300.jpeg",
+        "raw/images/injeksi-polyurethane-9-481x1024.jpeg",
+        "raw/images/injeksi-polyurethane-9-722x1536.jpeg"
+      ]
+    },
+    {
+      "base": "injeksi-polyurethane2",
+      "output": "optimized/images/injeksi-polyurethane2.webp",
+      "source": "raw/images/injeksi-polyurethane2.jpeg",
+      "skipped": [
+        "raw/images/injeksi-polyurethane2-225x300.jpeg"
+      ]
+    },
+    {
+      "base": "injeksi-polyurethane6",
+      "output": "optimized/images/injeksi-polyurethane6.webp",
+      "source": "raw/images/injeksi-polyurethane6.jpeg",
+      "skipped": [
+        "raw/images/injeksi-polyurethane6-1024x768.jpeg",
+        "raw/images/injeksi-polyurethane6-1536x1152.jpeg",
+        "raw/images/injeksi-polyurethane6-300x225.jpeg",
+        "raw/images/injeksi-polyurethane6-768x576.jpeg"
+      ]
+    },
+    {
+      "base": "injeksi-polyurethane7",
+      "output": "optimized/images/injeksi-polyurethane7.webp",
+      "source": "raw/images/injeksi-polyurethane7.jpeg",
+      "skipped": [
+        "raw/images/injeksi-polyurethane7-1024x768.jpeg",
+        "raw/images/injeksi-polyurethane7-1536x1152.jpeg",
+        "raw/images/injeksi-polyurethane7-300x225.jpeg",
+        "raw/images/injeksi-polyurethane7-768x576.jpeg"
+      ]
+    },
+    {
+      "base": "integral-1",
+      "output": "optimized/images/integral-1.webp",
+      "source": "raw/images/integral-1.png",
+      "skipped": [
+        "raw/images/integral-1-210x300.png"
+      ]
+    },
+    {
+      "base": "integral",
+      "output": "optimized/images/integral.webp",
+      "source": "raw/images/integral.png",
+      "skipped": [
+        "raw/images/integral-212x300.png",
+        "raw/images/integral-724x1024.png",
+        "raw/images/integral-768x1086.png"
+      ]
+    },
+    {
+      "base": "kon",
+      "output": "optimized/images/kon.webp",
+      "source": "raw/images/kon.jpg",
+      "skipped": [
+        "raw/images/kon-1024x1024.jpg",
+        "raw/images/kon-150x150.jpg",
+        "raw/images/kon-300x300.jpg",
+        "raw/images/kon-768x768.jpg"
+      ]
+    },
+    {
+      "base": "membrane-bakar-granule",
+      "output": "optimized/images/membrane-bakar-granule.webp",
+      "source": "raw/images/membrane-bakar-granule.jpeg",
+      "skipped": [
+        "raw/images/membrane-bakar-granule-1024x768.jpeg",
+        "raw/images/membrane-bakar-granule-300x225.jpeg",
+        "raw/images/membrane-bakar-granule-768x576.jpeg"
+      ]
+    },
+    {
+      "base": "Membrane-bakar-insitech-bitumax-1",
+      "output": "optimized/images/Membrane-bakar-insitech-bitumax-1.webp",
+      "source": "raw/images/Membrane-bakar-insitech-bitumax-1.png",
+      "skipped": [
+        "raw/images/Membrane-bakar-insitech-bitumax-1-300x217.png"
+      ]
+    },
+    {
+      "base": "Membrane-bakar-insitech-bitumax",
+      "output": "optimized/images/Membrane-bakar-insitech-bitumax.webp",
+      "source": "raw/images/Membrane-bakar-insitech-bitumax.png",
+      "skipped": [
+        "raw/images/Membrane-bakar-insitech-bitumax-300x167.png",
+        "raw/images/Membrane-bakar-insitech-bitumax-768x429.png"
+      ]
+    },
+    {
+      "base": "Membrane-bakar-insitech-bitumax-5",
+      "output": "optimized/images/Membrane-bakar-insitech-bitumax-5.webp",
+      "source": "raw/images/Membrane-bakar-insitech-bitumax-5.png",
+      "skipped": [
+        "raw/images/Membrane-bakar-insitech-bitumax-5-300x220.png"
+      ]
+    },
+    {
+      "base": "membrane-bakar-sanded",
+      "output": "optimized/images/membrane-bakar-sanded.webp",
+      "source": "raw/images/membrane-bakar-sanded.jpeg",
+      "skipped": [
+        "raw/images/membrane-bakar-sanded-1024x768.jpeg",
+        "raw/images/membrane-bakar-sanded-1536x1152.jpeg",
+        "raw/images/membrane-bakar-sanded-300x225.jpeg",
+        "raw/images/membrane-bakar-sanded-768x576.jpeg"
+      ]
+    },
+    {
+      "base": "MEMBRANE11",
+      "output": "optimized/images/MEMBRANE11.webp",
+      "source": "raw/images/MEMBRANE11.png",
+      "skipped": [
+        "raw/images/MEMBRANE11-300x218.png"
+      ]
+    },
+    {
+      "base": "picker-1",
+      "output": "optimized/images/picker-1.webp",
+      "source": "raw/images/picker-1.png",
+      "skipped": [
+        "raw/images/picker-1-243x300.png",
+        "raw/images/picker-1-768x949.png",
+        "raw/images/picker-1-828x1024.png"
+      ]
+    },
+    {
+      "base": "picker",
+      "output": "optimized/images/picker.webp",
+      "source": "raw/images/picker.png",
+      "skipped": [
+        "raw/images/picker-1024x795.png",
+        "raw/images/picker-300x233.png",
+        "raw/images/picker-768x597.png"
+      ]
+    },
+    {
+      "base": "picker3",
+      "output": "optimized/images/picker3.webp",
+      "source": "raw/images/picker3.jpg",
+      "skipped": [
+        "raw/images/picker3-1024x758.jpg",
+        "raw/images/picker3-300x222.jpg",
+        "raw/images/picker3-768x568.jpg"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "base": "basement-waterproofing-icon-logo-design-inspiration-vector",
+      "output": "optimized/logos/basement-waterproofing-icon-logo-design-inspiration-vector.webp",
+      "source": "raw/logos/basement-waterproofing-icon-logo-design-inspiration-vector.webp",
+      "skipped": [
+        "raw/logos/basement-waterproofing-icon-logo-design-inspiration-vector-1024x1024.webp",
+        "raw/logos/basement-waterproofing-icon-logo-design-inspiration-vector-150x150.webp",
+        "raw/logos/basement-waterproofing-icon-logo-design-inspiration-vector-1536x1536.webp",
+        "raw/logos/basement-waterproofing-icon-logo-design-inspiration-vector-300x300.webp",
+        "raw/logos/basement-waterproofing-icon-logo-design-inspiration-vector-768x768.webp"
+      ]
+    },
+    {
+      "base": "cropped-WhatsApp-Image-2023-01-08-at-21.55.34",
+      "output": "optimized/logos/cropped-WhatsApp-Image-2023-01-08-at-21.55.34.webp",
+      "source": "raw/logos/cropped-WhatsApp-Image-2023-01-08-at-21.55.34-270x270.jpeg",
+      "skipped": [
+        "raw/logos/cropped-WhatsApp-Image-2023-01-08-at-21.55.34-180x180.jpeg",
+        "raw/logos/cropped-WhatsApp-Image-2023-01-08-at-21.55.34-192x192.jpeg",
+        "raw/logos/cropped-WhatsApp-Image-2023-01-08-at-21.55.34-32x32.jpeg"
+      ]
+    },
+    {
+      "base": "logo-bin",
+      "output": "optimized/logos/logo-bin.webp",
+      "source": "raw/logos/logo-bin.png",
+      "skipped": [
+        "raw/logos/logo-bin-300x48.png"
+      ]
+    },
+    {
+      "base": "WhatsApp-Image-2023-01-08-at-21.55.34",
+      "output": "optimized/logos/WhatsApp-Image-2023-01-08-at-21.55.34.webp",
+      "source": "raw/logos/WhatsApp-Image-2023-01-08-at-21.55.34.jpeg",
+      "skipped": [
+        "raw/logos/WhatsApp-Image-2023-01-08-at-21.55.34-150x150.jpeg"
+      ]
+    }
+  ]
+}

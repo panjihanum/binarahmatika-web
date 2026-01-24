@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Membrane Bakar Sanded",
+    "description": "Proteksi atap dan dak beton dengan daya tahan tinggi.",
+    "images": [
+      {
+        "src": "/content/products/membrane-sanded-1.webp",
+        "alt": "Membrane bakar sanded"
+      },
+      {
+        "src": "/content/products/membrane-sanded-2.webp",
+        "alt": "Membrane bakar sanded detail"
+      },
+      {
+        "src": "/content/products/membrane-sanded-3.webp",
+        "alt": "Membrane bakar Bitumax"
+      }
+    ]
+  },
+  {
+    "title": "Membrane Bakar Granule",
+    "description": "Lapisan granule untuk ketahanan UV dan finishing elegan.",
+    "images": [
+      {
+        "src": "/content/products/membrane-granule-1.webp",
+        "alt": "Membrane bakar granule"
+      },
+      {
+        "src": "/content/products/membrane-granule-2.webp",
+        "alt": "Membrane granule detail"
+      },
+      {
+        "src": "/content/products/membrane-granule-3.webp",
+        "alt": "Membrane granule premium"
+      }
+    ]
+  },
+  {
+    "title": "Membrane Bakar Bitumax",
+    "description": "Produk membrane bakar merk Insutec Bitumax.",
+    "images": [
+      {
+        "src": "/content/products/bitumax-1.webp",
+        "alt": "Membrane bakar Bitumax"
+      },
+      {
+        "src": "/content/products/bitumax-2.webp",
+        "alt": "Membrane Bitumax granule"
+      },
+      {
+        "src": "/content/products/bitumax-3.webp",
+        "alt": "Membrane Bitumax roll"
+      }
+    ]
+  },
+  {
+    "title": "Primer Aspal Emulsi Integral",
+    "description": "Aspal emulsi cair siap pakai untuk primer coating.",
+    "images": [
+      {
+        "src": "/content/products/integral-1.webp",
+        "alt": "Primer aspal emulsi"
+      },
+      {
+        "src": "/content/products/integral-2.webp",
+        "alt": "Primer aspal emulsi detail"
+      },
+      {
+        "src": "/content/products/integral-3.webp",
+        "alt": "Produk primer aspal emulsi"
+      }
+    ]
+  },
+  {
+    "title": "Packer Injeksi Polyurethane",
+    "description": "Packer injeksi PU berbagai ukuran untuk perbaikan bocor.",
+    "images": [
+      {
+        "src": "/content/products/packer-1.webp",
+        "alt": "Packer injeksi polyurethane"
+      },
+      {
+        "src": "/content/products/packer-2.webp",
+        "alt": "Packer injeksi PU detail"
+      },
+      {
+        "src": "/content/products/packer-3.webp",
+        "alt": "Packer injeksi PU"
+      }
+    ]
+  },
+  {
+    "title": "Tabung & Mesin Injeksi",
+    "description": "Peralatan injeksi grouting dan polyurethane untuk proyek.",
+    "images": [
+      {
+        "src": "/content/products/injeksi-tools-1.webp",
+        "alt": "Peralatan injeksi beton"
+      },
+      {
+        "src": "/content/products/injeksi-tools-2.webp",
+        "alt": "Mesin injeksi polyurethane"
+      },
+      {
+        "src": "/content/products/injeksi-tools-3.webp",
+        "alt": "Peralatan injeksi"
+      }
+    ]
+  },
+  {
+    "title": "Epoxy Flooring & Ucrete",
+    "description": "Solusi lantai industri yang kuat dan mudah perawatan.",
+    "images": [
+      {
+        "src": "/content/products/epoxy-1.webp",
+        "alt": "Epoxy flooring"
+      },
+      {
+        "src": "/content/products/epoxy-2.webp",
+        "alt": "Aplikasi epoxy flooring"
+      },
+      {
+        "src": "/content/products/epoxy-3.webp",
+        "alt": "Finishing epoxy"
+      }
+    ]
+  }
+]

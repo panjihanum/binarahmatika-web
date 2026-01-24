@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Waterproofing Membrane Bakar",
+    "description": "Jasa pemasangan waterproofing untuk proyek skala kecil hingga besar di seluruh Indonesia.",
+    "icon": "Flame",
+    "images": [
+      {
+        "src": "/content/services/membrane-bakar-1.webp",
+        "alt": "Membrane bakar sanded"
+      },
+      {
+        "src": "/content/services/membrane-bakar-2.webp",
+        "alt": "Membrane bakar granule"
+      },
+      {
+        "src": "/content/services/membrane-bakar-3.webp",
+        "alt": "Membrane bakar Bitumax"
+      }
+    ]
+  },
+  {
+    "title": "Waterproofing Coating System",
+    "description": "Coating polyurethane, epoxy resin, dan semen base untuk perlindungan anti bocor.",
+    "icon": "Droplets",
+    "images": [
+      {
+        "src": "/content/services/coating-1.webp",
+        "alt": "Coating waterproofing"
+      },
+      {
+        "src": "/content/services/coating-2.webp",
+        "alt": "Primer aspal emulsi"
+      },
+      {
+        "src": "/content/services/coating-3.webp",
+        "alt": "Aplikasi coating"
+      }
+    ]
+  },
+  {
+    "title": "Injeksi Beton & Grouting",
+    "description": "Solusi kebocoran dan perbaikan struktur beton dengan metode injeksi modern.",
+    "icon": "Wrench",
+    "images": [
+      {
+        "src": "/content/services/injeksi-1.webp",
+        "alt": "Peralatan injeksi beton"
+      },
+      {
+        "src": "/content/services/injeksi-2.webp",
+        "alt": "Injeksi grouting"
+      },
+      {
+        "src": "/content/services/injeksi-3.webp",
+        "alt": "Injeksi grouting project"
+      }
+    ]
+  },
+  {
+    "title": "Injeksi Polyurethane",
+    "description": "Perbaikan kebocoran aktif dengan injeksi polyurethane (PU) bertekanan.",
+    "icon": "ShieldCheck",
+    "images": [
+      {
+        "src": "/content/services/pu-1.webp",
+        "alt": "Injeksi polyurethane"
+      },
+      {
+        "src": "/content/services/pu-2.webp",
+        "alt": "Aplikasi injeksi PU"
+      },
+      {
+        "src": "/content/services/pu-3.webp",
+        "alt": "Peralatan injeksi PU"
+      }
+    ]
+  },
+  {
+    "title": "Epoxy Flooring & Ucrete Flooring",
+    "description": "Finishing lantai industri yang tahan lama, rapi, dan mudah perawatan.",
+    "icon": "Building2",
+    "images": [
+      {
+        "src": "/content/services/epoxy-1.webp",
+        "alt": "Epoxy flooring"
+      },
+      {
+        "src": "/content/services/epoxy-2.webp",
+        "alt": "Pekerjaan epoxy"
+      },
+      {
+        "src": "/content/services/epoxy-3.webp",
+        "alt": "Finishing epoxy"
+      }
+    ]
+  }
+]
