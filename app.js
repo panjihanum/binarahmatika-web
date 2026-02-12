@@ -1,45 +1,32 @@
 #!/usr/bin/env node
 
 /**
- * Next.js Server untuk Shared Hosting
- * Bisa dijalankan: node app.js atau npm start
+ * Next.js Application Server untuk cPanel Node.js App
+ * 
+ * Entry point untuk production di shared hosting
+ * Jalankan: node app.js atau npm start
+ * 
+ * cPanel akan set environment variables:
+ * - PORT: Port yang di-assign oleh cPanel
+ * - NODE_ENV: production
  */
 
-const http = require('http')
 const path = require('path')
 
-// Setup environment
-process.env.NODE_ENV = 'production'
+// Set working directory ke root aplikasi
 process.chdir(__dirname)
 
-// Load Next.js standalone server
-const app = require('./.next/standalone/server.js')
+// Set production environment
+process.env.NODE_ENV = 'production'
 
-// Create HTTP server
-const server = http.createServer(app)
-
-// Listen (cPanel akan assign port otomatis)
-server.listen()
-
-// Log when server is ready
-server.on('listening', function() {
-  const addr = server.address()
-  const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
-  console.log('✅ Server listening on ' + bind)
-})
-
-server.on('error', function(err) {
-  if (err.code === 'EADDRINUSE') {
-    console.error('❌ Port already in use')
-  } else {
-    console.error('❌ Server error:', err.message)
+// Jalankan standalone server dari Next.js build
+try {
+  require('./.next/standalone/server.js')
+} catch (error) {
+  if (error.code === 'MODULE_NOT_FOUND') {
+    console.error('❌ Error: .next/standalone folder not found!')
+    console.error('Please run: npm install && npm run build')
+    process.exit(1)
   }
-  process.exit(1)
-})
-
-process.on('SIGTERM', function() {
-  console.log('Shutting down gracefully...')
-  server.close(function() {
-    process.exit(0)
-  })
-})
+  throw error
+}
