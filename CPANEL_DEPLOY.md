@@ -1,10 +1,10 @@
 # Deploy ke cPanel Node.js App
 
-## Quick Setup (5 menit)
+## Recommended: next start (Paling Simple & Reliable)
 
 ### 1. Upload ke Server
 - Via FTP/cPanel File Manager upload folder ke: `repositories/binarahmatika-web`
-- Atau via Git Clone (jika server support)
+- Atau via Git Clone (jika support)
 
 ### 2. Install & Build
 Via SSH atau cPanel Terminal:
@@ -22,50 +22,34 @@ npm run build
    - **Node.js version**: 18+ (atau latest)
    - **Application mode**: Production
    - **Application root**: `/home/binarahm/repositories/binarahmatika-web`
-   - **Application startup file**: `app.js`
+   - **Application startup file**: `server.js` ← Biarkan kosong, Next.js auto-detect
    - **Application URL**: Your domain (e.g., binarahmatika-group.com)
-   - **Passenger log file**: `/home/binarahm/logs/passenger.log`
+   - **Passenger log file**: `/home/binarahm/logs/passenger.log` (optional)
    - **Environment variables**:
      ```
      NODE_ENV=production
      ```
    - **Run "npm install" when creating/updating?**: ✓ Checked
-   - **Run "npm start" script?**: ✗ Unchecked (cPanel handle it)
+   - **Run "npm start" script?**: ✓ Checked ← Let cPanel run npm start
 5. Click **Create**
-6. **Restart Application** dari cPanel
+6. **Restart Application**
 
 ### 4. Test
 Open browser → `https://yourdomain.com` ✅
 
 ---
 
-## Configuration Details
-
-### app.js
-- Entry point untuk cPanel Node.js App
-- Automatically load `./.next/standalone/server.js`
-- Support environment variables dari cPanel
-
-### next.config.ts
-```typescript
-output: 'standalone'  // Generate standalone build
-```
+## Configuration
 
 ### package.json
 ```json
-"start": "node app.js"  // Entry point untuk npm start
+"start": "next start"  // Di-jalankan oleh cPanel
 ```
 
----
-
-## Environment Variables (cPanel)
-
-Setup di cPanel > Setup Node.js App > Environment Variables:
-
-```
-NODE_ENV=production
-PORT=[auto from cPanel]
-HOSTNAME=0.0.0.0
+### next.config.ts
+```typescript
+// Normal mode - CSS dan assets ter-load dengan benar
+// Tidak perlu standalone mode
 ```
 
 ---
@@ -73,19 +57,13 @@ HOSTNAME=0.0.0.0
 ## Troubleshooting
 
 ### CSS/Assets tidak load
-- Pastikan build sudah di-generate: `npm run build`
-- Cek folder `.next` sudah ada
+- Pastikan: `npm run build` успешно
+- Check cPanel logs: Setup Node.js App > View Logs
+- Restart aplikasi di cPanel
 
-### Error: .next/standalone not found
+### Error: build not found
 - Jalankan: `npm run build`
-- Pastikan `.next` folder ada di server
-
-### Port conflict
-- cPanel auto-assign port, tidak perlu worry
-
-### Restart aplikasi
-1. Via cPanel: Setup Node.js App > Restart
-2. Atau: `npm start` di SSH
+- Cek folder `.next` ada
 
 ---
 
@@ -93,10 +71,9 @@ HOSTNAME=0.0.0.0
 
 ```
 ~/repositories/binarahmatika-web/
-├── .next/              (auto-generated from npm run build)
+├── .next/              (auto-generated)
 ├── public/             (static assets)
 ├── src/                (source code)
-├── app.js              (entry point ⭐)
 ├── package.json
 ├── next.config.ts
 └── ...
@@ -104,29 +81,5 @@ HOSTNAME=0.0.0.0
 
 ---
 
-## FAQ
+✅ **Selesai!** 🚀
 
-**Q: Bagaimana update code?**
-A: Push ke GitHub → cPanel Git pull atau upload via FTP → Restart app
-
-**Q: Perlu re-build setiap kali update?**
-A: Ya, jalankan: `npm run build` setelah update code
-
-**Q: Bagaimana lihat logs?**
-A: cPanel > Setup Node.js App > View Logs
-
----
-
-## Deployment Checklist
-
-- [ ] Code sudah push ke git
-- [ ] Upload folder ke cPanel (`repositories/binarahmatika-web`)
-- [ ] Jalankan `npm install --production`
-- [ ] Jalankan `npm run build`
-- [ ] Setup Node.js App di cPanel dengan konfigurasi di atas
-- [ ] Test di browser
-- [ ] Check Passenger logs jika ada error
-
----
-
-Selesai! 🚀
