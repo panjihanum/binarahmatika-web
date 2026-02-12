@@ -1,32 +1,28 @@
 #!/usr/bin/env node
 
 /**
- * Next.js Application Server untuk cPanel Node.js App
+ * Optional: Next.js Production Server untuk cPanel Node.js
  * 
- * Entry point untuk production di shared hosting
- * Jalankan: node app.js atau npm start
+ * JANGAN gunakan file ini! Use: npm start (yang jalankan 'next start')
  * 
- * cPanel akan set environment variables:
- * - PORT: Port yang di-assign oleh cPanel
- * - NODE_ENV: production
+ * File ini hanya untuk referensi jika setup standalone di cPanel
+ * Untuk local development dan testing: npm start sudah cukup
  */
 
 const path = require('path')
 
-// Set working directory ke root aplikasi
 process.chdir(__dirname)
-
-// Set production environment
 process.env.NODE_ENV = 'production'
 
-// Jalankan standalone server dari Next.js build
+// Untuk standalone mode (jika ingin use):
+// 1. Update next.config.ts: output: 'standalone'
+// 2. npm run build
+// 3. Run: node app.js
+
 try {
   require('./.next/standalone/server.js')
 } catch (error) {
-  if (error.code === 'MODULE_NOT_FOUND') {
-    console.error('❌ Error: .next/standalone folder not found!')
-    console.error('Please run: npm install && npm run build')
-    process.exit(1)
-  }
-  throw error
+  console.error('ERROR: Standalone mode not configured!')
+  console.error('Use: npm start (atau next start)')
+  process.exit(1)
 }
