@@ -1,23 +1,46 @@
 # Deploy ke cPanel Node.js App
 
-## ⚠️ SEBELUM SETUP DI cPANEL
+## 🚨 CRITICAL: BUILD MUST BE DONE LOCALLY!
 
-**JANGAN gunakan "Run NPM Install" di cPanel UI jika build belum ada!**
+**Turbopack Compilation Requires Too Many Resources for cPanel Shared Hosting**
 
-Jalankan locally dulu:
+**DO NOT try to build on cPanel server!** You will get:
+- `OS can't spawn worker thread: Resource temporarily unavailable`
+- `pthread_create: Resource temporarily unavailable`
+- `Killed` (build process terminated)
+
+**MANDATORY STEPS:**
+
+### 1️⃣ BUILD LOCALLY (Windows/Mac/Linux)
 ```bash
-npm install --production
+# On your local machine:
+npm install
 npm run build
-npm start        # Test apakah berjalan
+npm start        # Test locally - CSS must load!
 ```
 
-Verify success:
+Results: Creates `.next/` folder with compiled app
+
+### 2️⃣ UPLOAD TO cPANEL
+Upload THESE folders/files ONLY:
+- ✅ `src/`
+- ✅ `public/`
+- ✅ `.next/`        ← CRITICAL! Pre-compiled build
+- ✅ `package.json`
+- ✅ `next.config.ts`
+- ✅ `.gitignore` (if using Git)
+
+**DO NOT upload:**
+- ❌ `node_modules/` (upload from Windows will break on Linux!)
+- ❌ `.next.lock` files
+
+### 3️⃣ INSTALL DEPENDENCIES ON cPANEL (SSH)
 ```bash
-ls -la .next/    # Harus ada folder .next
-ls -la node_modules/
+cd ~/repositories/binarahmatika-web
+npm install --production   # This will install LINUX-COMPATIBLE binaries
 ```
 
-Baru upload ke cPanel!
+Done! Passenger will auto-start the app.
 
 ---
 
