@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:export": "next build && next export",
     "start": "node app.js",
+    "start:pm2": "pm2 start app.js --name binarahmatika-web",
     "lint": "eslint"
   },
   "dependencies": {
