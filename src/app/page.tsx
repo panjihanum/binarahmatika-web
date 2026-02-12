@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Sparkles } from "lucide-react";
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 import { FadeUp } from "@/components/fade-up";
 import { ImageCarousel } from "@/components/image-carousel";
@@ -284,8 +285,12 @@ export default function Home() {
                           <tr>
                             <th className="py-2 pr-4">No</th>
                             <th className="py-2 pr-4">Nama Proyek</th>
-                            <th className="py-2 pr-4">Instansi/Perusahaan</th>
-                            <th className="py-2 pr-4">Alamat</th>
+                            <th className="hidden py-2 pr-4 md:table-cell">
+                              Instansi/Perusahaan
+                            </th>
+                            <th className="hidden py-2 pr-4 lg:table-cell">
+                              Alamat
+                            </th>
                             <th className="py-2 pr-4">Pekerjaan</th>
                             <th className="py-2">Volume</th>
                           </tr>
@@ -302,8 +307,12 @@ export default function Home() {
                               <td className="py-2 pr-4 text-zinc-900">
                                 {item.name}
                               </td>
-                              <td className="py-2 pr-4">{item.client}</td>
-                              <td className="py-2 pr-4">{item.location}</td>
+                              <td className="hidden py-2 pr-4 md:table-cell">
+                                {item.client}
+                              </td>
+                              <td className="hidden py-2 pr-4 lg:table-cell">
+                                {item.location}
+                              </td>
                               <td className="py-2 pr-4">{item.scope}</td>
                               <td className="py-2 text-amber-700">
                                 {item.volume}
@@ -352,29 +361,68 @@ export default function Home() {
         <VideoSection />
 
         <section id="kontak" className="bg-zinc-900 py-16 text-white">
-          <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 lg:flex-row lg:items-center lg:justify-between">
+          <div className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[1.2fr_0.8fr]">
             <FadeUp>
               <div>
                 <h2 className="text-3xl font-semibold">Siap Mulai Proyek?</h2>
                 <p className="mt-3 text-zinc-300">
                   Hubungi tim kami untuk konsultasi, survey, dan penawaran terbaik.
                 </p>
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <FiPhone className="h-5 w-5 text-amber-300" />
+                    <div>
+                      <p className="text-xs uppercase text-zinc-400">Telepon</p>
+                      <p className="text-sm font-semibold">0812-9812-8370</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <FiMail className="h-5 w-5 text-amber-300" />
+                    <div>
+                      <p className="text-xs uppercase text-zinc-400">Email</p>
+                      <p className="text-sm font-semibold">
+                        binarahmatika.waterproofing@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:col-span-2">
+                    <FiMapPin className="h-5 w-5 text-amber-300" />
+                    <div>
+                      <p className="text-xs uppercase text-zinc-400">Alamat</p>
+                      <p className="text-sm font-semibold">
+                        Jl. Raya Setu Bekasi Timur Regency Blok D1/12A, Bekasi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </FadeUp>
             <FadeUp delay={0.1}>
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="tel:+6281298128370"
-                  className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-900"
-                >
-                  Telepon: 0812-9812-8370
-                </a>
-                <a
-                  href="mailto:binarahmatika.waterproofing@gmail.com"
-                  className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white"
-                >
-                  Kirim Email
-                </a>
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 className="text-lg font-semibold">Kontak Cepat</h3>
+                <p className="mt-2 text-sm text-zinc-300">
+                  Pilih kanal komunikasi yang paling nyaman.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-4">
+                  <a
+                    href="tel:+6281298128370"
+                    className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-900"
+                  >
+                    Telepon
+                  </a>
+                  <a
+                    href="mailto:binarahmatika.waterproofing@gmail.com"
+                    className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white"
+                  >
+                    Email
+                  </a>
+                  <a
+                    href="https://wa.me/6281298128370"
+                    className="rounded-full border border-amber-300/60 px-6 py-3 text-sm font-semibold text-amber-200"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
               </div>
             </FadeUp>
           </div>
