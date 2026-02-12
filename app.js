@@ -1,35 +1,45 @@
 #!/usr/bin/env node
 
 /**
- * Next.js Standalone Server Entry Point for Shared Hosting
- * Usage: npm start or node app.js
+ * Next.js Server untuk Shared Hosting
+ * Bisa dijalankan: node app.js atau npm start
  */
 
+const http = require('http')
 const path = require('path')
 
-// Server configuration
-const dir = path.join(__dirname)
-const currentPort = parseInt(process.env.PORT, 10) || 3000
-const hostname = process.env.HOSTNAME || '0.0.0.0'
-
+// Setup environment
 process.env.NODE_ENV = 'production'
 process.chdir(__dirname)
 
-// Load Next.js and start server
-try {
-  console.log('🚀 Starting server...')
-  console.log(`📝 Port: ${currentPort}`)
-  console.log(`🌐 Hostname: ${hostname}`)
-  
-  // Require the Next.js server
-  const nextApp = require('./.next/standalone/server.js')
-  
-  console.log('✅ Server started successfully')
-} catch (error) {
-  console.error('❌ Error starting server:', error.message)
-  if (!require('fs').existsSync('./.next')) {
-    console.error('\n⚠️  Error: .next folder not found!')
-    console.error('Please run: npm run build')
+// Load Next.js standalone server
+const app = require('./.next/standalone/server.js')
+
+// Create HTTP server
+const server = http.createServer(app)
+
+// Listen (cPanel akan assign port otomatis)
+server.listen()
+
+// Log when server is ready
+server.on('listening', function() {
+  const addr = server.address()
+  const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
+  console.log('✅ Server listening on ' + bind)
+})
+
+server.on('error', function(err) {
+  if (err.code === 'EADDRINUSE') {
+    console.error('❌ Port already in use')
+  } else {
+    console.error('❌ Server error:', err.message)
   }
   process.exit(1)
-}
+})
+
+process.on('SIGTERM', function() {
+  console.log('Shutting down gracefully...')
+  server.close(function() {
+    process.exit(0)
+  })
+})
