@@ -46,9 +46,52 @@ const highlights = [
   "Melayani proyek di seluruh Indonesia",
 ];
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Bina Rahmatika Group",
+      url: "https://binarahmatika.com",
+      logo: "https://binarahmatika.com/assets/legacy/optimized/logos/logo-bin.webp",
+      email: "binarahmatika.waterproofing@gmail.com",
+      sameAs: [
+        `https://wa.me/${WA_PRIMARY}`,
+        `https://wa.me/${WA_SECONDARY}`,
+      ],
+    },
+    {
+      "@type": "LocalBusiness",
+      name: "Bina Rahmatika Group",
+      url: "https://binarahmatika.com",
+      image: "https://binarahmatika.com/assets/images/hero-home-spesialis.png",
+      description:
+        "Spesialis waterproofing, injeksi beton, grouting, polyurethane, dan epoxy flooring untuk proyek industri, komersial, dan residensial.",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Jl. Raya Setu Bekasi Timur Regency Blok D1/12A",
+        addressLocality: "Bekasi",
+        addressCountry: "ID",
+      },
+      telephone: ["0878-9755-3952", "0812-9521-1826"],
+      areaServed: "Indonesia",
+      serviceType: [
+        "Waterproofing Membrane Bakar",
+        "Injeksi Beton",
+        "Grouting",
+        "Epoxy Flooring",
+      ],
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(245,158,11,0.12),_transparent_45%)]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
