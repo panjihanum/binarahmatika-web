@@ -1,55 +1,51 @@
 import Image from "next/image";
 import { Sparkles } from "lucide-react";
-import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { FadeUp } from "@/components/fade-up";
 import { ImageCarousel } from "@/components/image-carousel";
 import { ProductGallery } from "@/components/product-gallery";
 import { ServiceGallery } from "@/components/service-gallery";
-import { projectExperienceSections } from "@/data/project-experience";
+import { ProjectPortfolio } from "@/components/project-portfolio";
 import { VideoSection } from "@/components/video-section";
 
-const products = [
+const WA_PRIMARY = "6287897553952";
+const WA_SECONDARY = "6281295211826";
+
+const featuredMaterials = [
   {
-    title: "Membrane Bakar Sanded",
+    title: "Membrane Bakar",
     image: "/assets/legacy/optimized/images/membrane-bakar-sanded.webp",
+    bullets: [
+      "Waterproofing berbasis bitumen untuk perlindungan maksimal area atap & dak beton",
+      "Tahan lama & cocok untuk proyek skala besar",
+    ],
   },
   {
-    title: "Membrane Bakar Granule",
+    title: "Aspal Emulsi",
     image: "/assets/legacy/optimized/images/membrane-bakar-granule.webp",
+    bullets: [
+      "Digunakan sebagai primer & lapisan pelindung",
+      "Meningkatkan daya rekat sistem waterproofing",
+    ],
   },
   {
-    title: "Injeksi Grouting",
+    title: "Tabung Injeksi & Peralatan",
     image: "/assets/legacy/optimized/images/Injeksi-grouting.webp",
+    bullets: [
+      "Digunakan untuk proses injeksi beton & grouting",
+      "Mendukung pekerjaan perbaikan struktur secara efisien",
+    ],
   },
 ];
 
 const highlights = [
-  "Distributor resmi produk membrane bakar INSUTEC BITUMAX.",
-  "Tim berpengalaman menangani proyek bocor, retak, dan kebocoran basement.",
-  "Layanan mencakup waterproofing, injeksi polyurethane, epoxy flooring, dan coating.",
-  "Melayani order pembelian dan applicator di seluruh Indonesia.",
+  "Berpengalaman menangani proyek bocor & retak sejak 1991",
+  "Spesialis waterproofing, injeksi beton, dan epoxy flooring",
+  "Distributor resmi produk waterproofing berkualitas",
+  "Melayani proyek di seluruh Indonesia",
 ];
-
-const workflow = [
-  {
-    step: "Persiapan lokasi",
-    detail: "Survey area, identifikasi titik bocor, dan rencana kerja yang jelas.",
-  },
-  {
-    step: "Pemasangan titik injeksi",
-    detail: "Bobok/cutting V, pemasangan packer, lalu sealing awal.",
-  },
-  {
-    step: "Pelaksanaan injeksi",
-    detail: "Injeksi material sesuai kebutuhan hingga titik bocor tertutup sempurna.",
-  },
-  {
-    step: "Finishing & perapihan",
-    detail: "Pengeringan, pemotongan titik injeksi, dan kebersihan area kerja.",
-  },
-];
-
 
 export default function Home() {
   return (
@@ -83,7 +79,7 @@ export default function Home() {
             </a>
           </nav>
           <a
-            href="https://wa.me/6281298128370"
+            href={`https://wa.me/${WA_PRIMARY}`}
             className="rounded-full bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-zinc-800"
           >
             Hubungi Admin
@@ -102,29 +98,30 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={0.05}>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight text-zinc-900 md:text-5xl">
-                Solusi Waterproofing & Injeksi Beton Terpercaya Sejak 1991
+                Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring Sejak 1991
               </h1>
             </FadeUp>
             <FadeUp delay={0.1}>
               <p className="text-lg leading-relaxed text-zinc-600">
-                Bina Rahmatika Group melayani pemasangan waterproofing membrane
-                bakar, coating system, injeksi beton, grouting, hingga epoxy
-                flooring dengan tim berpengalaman dan standar pekerjaan terbaik.
+                Bina Rahmatika Group merupakan Solusi lengkap pekerjaan chemical
+                construction untuk mengatasi kebocoran, perbaikan struktur beton,
+                hingga finishing lantai industri dengan hasil tahan lama &
+                professional.
               </p>
             </FadeUp>
             <FadeUp delay={0.15}>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://wa.me/6281298128370"
+                  href={`https://wa.me/${WA_PRIMARY}`}
                   className="rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800"
                 >
                   Konsultasi Gratis
                 </a>
                 <a
-                  href="#produk"
+                  href="#layanan"
                   className="rounded-full border border-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-700 transition hover:border-zinc-400"
                 >
-                  Lihat Produk
+                  Lihat Layanan
                 </a>
               </div>
             </FadeUp>
@@ -142,8 +139,8 @@ export default function Home() {
           <FadeUp delay={0.2}>
             <div className="relative overflow-hidden rounded-3xl border border-white/60 bg-white p-4 shadow-xl">
               <Image
-                src="/assets/legacy/optimized/images/bina-rahmatika-group.webp"
-                alt="Tim Bina Rahmatika"
+                src="/assets/images/hero-home-spesialis.png"
+                alt="Tim teknis memeriksa dinding beton dan denah di lokasi industrial — waterproofing, injeksi beton, epoxy flooring"
                 width={720}
                 height={480}
                 className="h-full w-full rounded-2xl object-cover"
@@ -157,23 +154,35 @@ export default function Home() {
             <div className="rounded-3xl border border-zinc-100 bg-white p-8 shadow-sm">
               <p className="text-sm font-semibold text-amber-600">Tentang Kami</p>
               <h2 className="mt-2 text-2xl font-semibold text-zinc-900">
-                Kontraktor Khusus Waterproofing & Injeksi Beton
+                Spesialis Chemical Construction untuk Solusi Waterproofing,
+                Injeksi Beton & Flooring
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-zinc-600">
-                Bina Rahmatika Group adalah kontraktor khusus jasa dan distributor
-                waterproofing membrane bakar, coating, primer aspal emulsi,
-                injeksi beton, grouting, polyurethane, hingga epoxy flooring.
-                Berpengalaman sejak 1991 dengan jangkauan layanan nasional.
-              </p>
+              <div className="mt-4 space-y-3 text-base leading-relaxed text-zinc-600">
+                <p>
+                  Bina Rahmatika Group adalah kontraktor dan distributor yang
+                  berfokus pada solusi chemical construction untuk berbagai
+                  kebutuhan proyek.
+                </p>
+                <p>
+                  Kami menangani waterproofing, injeksi beton, grouting, hingga
+                  epoxy flooring dengan standar kerja profesional dan hasil yang
+                  tahan lama.
+                </p>
+                <p>
+                  Berpengalaman sejak 1991, kami telah dipercaya dalam berbagai
+                  proyek industrial, komersial, hingga residensial di seluruh
+                  Indonesia.
+                </p>
+              </div>
               <div className="mt-6 flex flex-wrap gap-3 text-sm text-zinc-600">
                 <span className="rounded-full border border-zinc-200 px-4 py-2">
-                  Distributor resmi
+                  Distributor Resmi Produk Berkualitas
                 </span>
                 <span className="rounded-full border border-zinc-200 px-4 py-2">
-                  Tim applicator
+                  Tim Aplikator Berpengalaman
                 </span>
                 <span className="rounded-full border border-zinc-200 px-4 py-2">
-                  Support nasional
+                  Jangkauan Proyek Nasional
                 </span>
               </div>
             </div>
@@ -181,30 +190,38 @@ export default function Home() {
           <FadeUp delay={0.05}>
             <div className="rounded-3xl border border-zinc-100 bg-white p-6 shadow-sm">
               <Image
-                src="/assets/legacy/optimized/images/binarahmatika49.webp"
-                alt="Pekerjaan lapangan"
-                width={420}
-                height={320}
-                className="h-56 w-full rounded-2xl object-cover"
+                src="/assets/images/tentang-kami-proyek.png"
+                alt="Kolase dokumentasi pekerjaan waterproofing, epoxy flooring, dan proyek industrial Bina Rahmatika Group"
+                width={720}
+                height={720}
+                className="aspect-square w-full rounded-2xl object-cover"
               />
-              <div className="mt-4 text-sm text-zinc-600">
-                Melayani proyek industrial, komersial, hingga residensial dengan
-                metode kerja yang rapi dan terukur.
+              <div className="mt-4 text-sm leading-relaxed text-zinc-600">
+                Menangani berbagai proyek industrial, komersial, hingga residensial
+                dengan metode kerja yang rapi, terukur, dan bergaransi.
               </div>
             </div>
           </FadeUp>
         </section>
 
-        <section id="layanan" className="bg-white py-16">
-          <div className="mx-auto max-w-6xl space-y-10 px-6">
+        <section
+          id="layanan"
+          className="relative overflow-hidden bg-white py-16"
+        >
+          <div
+            className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-amber-200/25 blur-3xl"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-zinc-300/20 blur-3xl"
+            aria-hidden
+          />
+          <div className="relative mx-auto max-w-6xl space-y-10 px-6">
             <FadeUp>
-              <div>
+              <div className="max-w-2xl">
                 <p className="text-sm font-semibold text-amber-600">
                   Layanan Kami
                 </p>
-                <h2 className="text-3xl font-semibold text-zinc-900">
-                  Layanan Terpadu untuk Proyek Anda
-                </h2>
               </div>
             </FadeUp>
             <ServiceGallery />
@@ -219,8 +236,13 @@ export default function Home() {
                   Produk Unggulan
                 </p>
                 <h2 className="text-3xl font-semibold text-zinc-900">
-                  Produk Berkualitas untuk Proteksi Maksimal
+                  Material &amp; Produk yang Kami Distribusikan
                 </h2>
+                <p className="mt-3 max-w-3xl text-sm leading-relaxed text-zinc-600">
+                  Kami menyediakan material berkualitas untuk mendukung berbagai
+                  kebutuhan waterproofing, injeksi beton, dan epoxy flooring, baik
+                  untuk supply maupun aplikasi langsung.
+                </p>
               </div>
             </FadeUp>
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -228,20 +250,31 @@ export default function Home() {
                 <ImageCarousel />
               </FadeUp>
               <div className="grid gap-6">
-                {products.map((product, index) => (
-                  <FadeUp key={product.title} delay={0.05 * index}>
+                {featuredMaterials.map((item, index) => (
+                  <FadeUp key={item.title} delay={0.05 * index}>
                     <div className="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
                       <Image
-                        src={product.image}
-                        alt={product.title}
+                        src={item.image}
+                        alt={item.title}
                         width={420}
                         height={280}
                         className="h-40 w-full object-cover"
                       />
                       <div className="p-5">
-                        <h3 className="text-base font-semibold text-zinc-900">
-                          {product.title}
-                        </h3>
+                        <p className="text-xs font-semibold text-amber-600">
+                          {index + 1}. {item.title}
+                        </p>
+                        <ul className="mt-3 space-y-2 text-sm text-zinc-600">
+                          {item.bullets.map((line) => (
+                            <li key={line} className="flex gap-2">
+                              <span
+                                className="mt-2 h-1 w-1 shrink-0 rounded-full bg-zinc-400"
+                                aria-hidden
+                              />
+                              <span>{line}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   </FadeUp>
@@ -263,98 +296,12 @@ export default function Home() {
                   Portofolio Proyek Berjalan & Selesai
                 </h2>
                 <p className="mt-3 max-w-3xl text-sm text-zinc-600">
-                  Seluruh data proyek dari halaman Project Experience telah
-                  dipindahkan ke website ini dan dikelompokkan berdasarkan
-                  periode tahun.
+                  Pilih tahun pada dropdown untuk menampilkan daftar proyek
+                  berjalan dan selesai sesuai periode data.
                 </p>
               </div>
             </FadeUp>
-            <div className="space-y-6">
-              {projectExperienceSections.map((section, sectionIndex) => (
-                <FadeUp key={section.title} delay={0.02 * sectionIndex}>
-                  <details className="group rounded-2xl border border-zinc-100 bg-zinc-50 p-5">
-                    <summary className="cursor-pointer list-none text-base font-semibold text-zinc-900">
-                      {section.title}
-                      <span className="ml-2 text-sm font-medium text-amber-600">
-                        ({section.items.length} proyek)
-                      </span>
-                    </summary>
-                    <div className="mt-4 overflow-x-auto">
-                      <table className="min-w-full text-left text-sm text-zinc-600">
-                        <thead className="text-xs uppercase text-zinc-500">
-                          <tr>
-                            <th className="py-2 pr-4">No</th>
-                            <th className="py-2 pr-4">Nama Proyek</th>
-                            <th className="hidden py-2 pr-4 md:table-cell">
-                              Instansi/Perusahaan
-                            </th>
-                            <th className="hidden py-2 pr-4 lg:table-cell">
-                              Alamat
-                            </th>
-                            <th className="py-2 pr-4">Pekerjaan</th>
-                            <th className="py-2">Volume</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {section.items.map((item) => (
-                            <tr
-                              key={`${section.title}-${item.no}-${item.name}`}
-                              className="border-t border-zinc-200/60"
-                            >
-                              <td className="py-2 pr-4 font-medium text-zinc-900">
-                                {item.no}
-                              </td>
-                              <td className="py-2 pr-4 text-zinc-900">
-                                {item.name}
-                              </td>
-                              <td className="hidden py-2 pr-4 md:table-cell">
-                                {item.client}
-                              </td>
-                              <td className="hidden py-2 pr-4 lg:table-cell">
-                                {item.location}
-                              </td>
-                              <td className="py-2 pr-4">{item.scope}</td>
-                              <td className="py-2 text-amber-700">
-                                {item.volume}
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </details>
-                </FadeUp>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-white py-16">
-          <div className="mx-auto max-w-6xl space-y-10 px-6">
-            <FadeUp>
-              <div>
-                <p className="text-sm font-semibold text-amber-600">
-                  Metode Kerja
-                </p>
-                <h2 className="text-3xl font-semibold text-zinc-900">
-                  Alur Pekerjaan Injeksi Beton
-                </h2>
-              </div>
-            </FadeUp>
-            <div className="grid gap-6 md:grid-cols-2">
-              {workflow.map((item, index) => (
-                <FadeUp key={item.step} delay={0.05 * index}>
-                  <div className="rounded-2xl border border-zinc-100 bg-zinc-50 p-6">
-                    <h3 className="text-base font-semibold text-zinc-900">
-                      {item.step}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-600">
-                      {item.detail}
-                    </p>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
+            <ProjectPortfolio />
           </div>
         </section>
 
@@ -364,16 +311,34 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[1.2fr_0.8fr]">
             <FadeUp>
               <div>
-                <h2 className="text-3xl font-semibold">Siap Mulai Proyek?</h2>
+                <h2 className="text-3xl font-semibold">
+                  Konsultasikan Kebutuhan Anda Sekarang
+                </h2>
                 <p className="mt-3 text-zinc-300">
-                  Hubungi tim kami untuk konsultasi, survey, dan penawaran terbaik.
+                  Tim kami siap membantu Anda menentukan Solusi terbaik untuk
+                  kebutuhan waterproofing, injeksi beton, hingga epoxy flooring.
                 </p>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <FiPhone className="h-5 w-5 text-amber-300" />
-                    <div>
-                      <p className="text-xs uppercase text-zinc-400">Telepon</p>
-                      <p className="text-sm font-semibold">0812-9812-8370</p>
+                  <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:col-span-2">
+                    <FaWhatsapp className="h-5 w-5 shrink-0 text-emerald-400" />
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
+                        Hubungi via WhatsApp
+                      </p>
+                      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                        <a
+                          href={`https://wa.me/${WA_PRIMARY}`}
+                          className="text-sm font-semibold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-white"
+                        >
+                          0878-9755-3952
+                        </a>
+                        <a
+                          href={`https://wa.me/${WA_SECONDARY}`}
+                          className="text-sm font-semibold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-white"
+                        >
+                          0812-9521-1826
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -385,7 +350,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:col-span-2">
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                     <FiMapPin className="h-5 w-5 text-amber-300" />
                     <div>
                       <p className="text-xs uppercase text-zinc-400">Alamat</p>
@@ -403,24 +368,26 @@ export default function Home() {
                 <p className="mt-2 text-sm text-zinc-300">
                   Pilih kanal komunikasi yang paling nyaman.
                 </p>
-                <div className="mt-6 flex flex-wrap gap-4">
+                <div className="mt-6 flex flex-col gap-3">
                   <a
-                    href="tel:+6281298128370"
-                    className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-900"
+                    href={`https://wa.me/${WA_PRIMARY}`}
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/50 bg-emerald-500/10 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/20"
                   >
-                    Telepon
+                    <FaWhatsapp className="h-4 w-4" />
+                    WhatsApp 0878-9755-3952
+                  </a>
+                  <a
+                    href={`https://wa.me/${WA_SECONDARY}`}
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/50 bg-emerald-500/10 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/20"
+                  >
+                    <FaWhatsapp className="h-4 w-4" />
+                    WhatsApp 0812-9521-1826
                   </a>
                   <a
                     href="mailto:binarahmatika.waterproofing@gmail.com"
-                    className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white"
+                    className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                   >
                     Email
-                  </a>
-                  <a
-                    href="https://wa.me/6281298128370"
-                    className="rounded-full border border-amber-300/60 px-6 py-3 text-sm font-semibold text-amber-200"
-                  >
-                    WhatsApp
                   </a>
                 </div>
               </div>

@@ -1,96 +1,65 @@
 [
   {
-    "title": "Waterproofing Membrane Bakar",
-    "description": "Jasa pemasangan waterproofing untuk proyek skala kecil hingga besar di seluruh Indonesia.",
-    "icon": "Flame",
-    "images": [
-      {
-        "src": "/content/services/membrane-bakar-1.webp",
-        "alt": "Membrane bakar sanded"
-      },
-      {
-        "src": "/content/services/membrane-bakar-2.webp",
-        "alt": "Membrane bakar granule"
-      },
-      {
-        "src": "/content/services/membrane-bakar-3.webp",
-        "alt": "Membrane bakar Bitumax"
-      }
-    ]
-  },
-  {
-    "title": "Waterproofing Coating System",
-    "description": "Coating polyurethane, epoxy resin, dan semen base untuk perlindungan anti bocor.",
+    "title": "Waterproofing System",
+    "description": "Solusi perlindungan bangunan dari kebocoran dengan berbagai metode sesuai kondisi proyek",
+    "bullets": ["Membrane Bakar", "Coating System"],
     "icon": "Droplets",
     "images": [
       {
-        "src": "/content/services/coating-1.webp",
-        "alt": "Coating waterproofing"
+        "src": "/assets/images/waterproofing-membrane-bakar.png",
+        "alt": "Aplikasi membrane bakar di atap datar"
       },
       {
-        "src": "/content/services/coating-2.webp",
-        "alt": "Primer aspal emulsi"
-      },
-      {
-        "src": "/content/services/coating-3.webp",
-        "alt": "Aplikasi coating"
+        "src": "/assets/images/waterproofing-coating-system.png",
+        "alt": "Aplikasi coating system waterproofing di atap"
       }
     ]
   },
   {
     "title": "Injeksi Beton & Grouting",
-    "description": "Solusi kebocoran dan perbaikan struktur beton dengan metode injeksi modern.",
+    "description": "Perbaikan kebocoran dan retakan struktur beton tanpa pembongkaran besar",
+    "bullets": [
+      "Injeksi Polyurethane (PU)",
+      "Epoxy Injection",
+      "Grouting Struktur"
+    ],
     "icon": "Wrench",
     "images": [
       {
-        "src": "/content/services/injeksi-1.webp",
-        "alt": "Peralatan injeksi beton"
+        "src": "/assets/images/injeksi-beton-grouting-pekerjaan.png",
+        "alt": "Pekerjaan injeksi beton pada retakan struktur dengan peralatan tekanan"
       },
       {
-        "src": "/content/services/injeksi-2.webp",
-        "alt": "Injeksi grouting"
+        "src": "/assets/images/injeksi-beton-grouting-inspeksi.png",
+        "alt": "Inspeksi dinding beton dan dokumentasi kebocoran sebelum perbaikan"
       },
       {
-        "src": "/content/services/injeksi-3.webp",
-        "alt": "Injeksi grouting project"
+        "src": "/assets/images/waterproofing-struktur-vertikal.png",
+        "alt": "Pekerjaan waterproofing dan pelindungan permukaan pada struktur vertikal skala besar"
       }
     ]
   },
   {
-    "title": "Injeksi Polyurethane",
-    "description": "Perbaikan kebocoran aktif dengan injeksi polyurethane (PU) bertekanan.",
-    "icon": "ShieldCheck",
-    "images": [
-      {
-        "src": "/content/services/pu-1.webp",
-        "alt": "Injeksi polyurethane"
-      },
-      {
-        "src": "/content/services/pu-2.webp",
-        "alt": "Aplikasi injeksi PU"
-      },
-      {
-        "src": "/content/services/pu-3.webp",
-        "alt": "Peralatan injeksi PU"
-      }
-    ]
-  },
-  {
-    "title": "Epoxy Flooring & Ucrete Flooring",
-    "description": "Finishing lantai industri yang tahan lama, rapi, dan mudah perawatan.",
+    "title": "Epoxy Flooring & Coating",
+    "description": "Solusi lantai industri yang kuat, tahan kimia, dan mudah perawatan",
+    "bullets": [
+      "Epoxy flooring",
+      "Self levelling floor",
+      "Protective coating"
+    ],
     "icon": "Building2",
     "images": [
       {
-        "src": "/content/services/epoxy-1.webp",
-        "alt": "Epoxy flooring"
+        "src": "/assets/images/epoxy-flooring-workshop.png",
+        "alt": "Lantai epoxy hijau mengkilap di bengkel industri"
       },
       {
-        "src": "/content/services/epoxy-2.webp",
-        "alt": "Pekerjaan epoxy"
+        "src": "/assets/images/epoxy-flooring-safety-lines.png",
+        "alt": "Finishing lantai epoxy dengan marking dan jalur keselamatan"
       },
       {
-        "src": "/content/services/epoxy-3.webp",
-        "alt": "Finishing epoxy"
+        "src": "/assets/images/epoxy-flooring-zones.png",
+        "alt": "Lantai epoxy multi-zona dengan permukaan rata dan protektif"
       }
     ]
   }

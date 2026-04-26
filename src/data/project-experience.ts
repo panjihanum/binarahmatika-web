@@ -14,7 +14,7 @@ export type ProjectExperienceSection = {
 
 export const projectExperienceSections: ProjectExperienceSection[] = [
   {
-    "title": "TAHUN 2018 – 2019 – 2020 – 2021 – 2022",
+    "title": "TAHUN 2018 – 2026",
     "items": [
       {
         "no": "1.",
@@ -1482,3 +1482,25 @@ export const projectExperienceSections: ProjectExperienceSection[] = [
     ]
   }
 ];
+
+/**
+ * Satu ringkasan portofolio periode 2016–2026: gabungan seluruh proyek
+ * (2011–2013 → 2014–2015 → 2016–2017 → 2018–2022), nomor urut disatukan.
+ */
+export const projectPortfolioSections: ProjectExperienceSection[] = (() => {
+  const merged = [
+    ...projectExperienceSections[1].items,
+    ...projectExperienceSections[2].items,
+    ...projectExperienceSections[3].items,
+    ...projectExperienceSections[0].items,
+  ].map((item, index) => ({
+    ...item,
+    no: `${index + 1}.`,
+  }));
+  return [
+    {
+      title: "Tahun 2016 – 2026",
+      items: merged,
+    },
+  ];
+})();
