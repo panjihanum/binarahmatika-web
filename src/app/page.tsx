@@ -5,7 +5,6 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import { FadeUp } from "@/components/fade-up";
 import { ImageCarousel } from "@/components/image-carousel";
-import { ProductGallery } from "@/components/product-gallery";
 import { ServiceGallery } from "@/components/service-gallery";
 import { ProjectPortfolio } from "@/components/project-portfolio";
 import { VideoSection } from "@/components/video-section";
@@ -70,6 +69,9 @@ export default function Home() {
             </a>
             <a href="#produk" className="hover:text-zinc-900">
               Produk
+            </a>
+            <a href="#project" className="hover:text-zinc-900">
+              Portfolio
             </a>
             <a href="#video" className="hover:text-zinc-900">
               Video
@@ -281,7 +283,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <ProductGallery />
           </div>
         </section>
 

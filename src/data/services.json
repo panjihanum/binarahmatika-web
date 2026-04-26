@@ -10,8 +10,8 @@
         "alt": "Aplikasi membrane bakar di atap datar"
       },
       {
-        "src": "/assets/images/waterproofing-coating-system.png",
-        "alt": "Aplikasi coating system waterproofing di atap"
+        "src": "/content/products/membrane-sanded-1.webp",
+        "alt": "Aplikasi coating system waterproofing"
       }
     ]
   },
@@ -26,12 +26,12 @@
     "icon": "Wrench",
     "images": [
       {
-        "src": "/assets/images/injeksi-beton-grouting-pekerjaan.png",
-        "alt": "Pekerjaan injeksi beton pada retakan struktur dengan peralatan tekanan"
+        "src": "/content/products/packer-1.webp",
+        "alt": "Packer injeksi polyurethane untuk perbaikan retakan"
       },
       {
-        "src": "/assets/images/injeksi-beton-grouting-inspeksi.png",
-        "alt": "Inspeksi dinding beton dan dokumentasi kebocoran sebelum perbaikan"
+        "src": "/content/products/injeksi-tools-2.webp",
+        "alt": "Mesin injeksi polyurethane untuk pekerjaan grouting"
       },
       {
         "src": "/assets/images/waterproofing-struktur-vertikal.png",

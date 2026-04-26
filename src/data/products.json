@@ -1,7 +1,7 @@
 [
   {
-    "title": "Membrane Bakar Sanded",
-    "description": "Proteksi atap dan dak beton dengan daya tahan tinggi.",
+    "title": "Membrane Bakar",
+    "description": "Sistem membrane bakar untuk proteksi atap dan dak beton dengan daya tahan tinggi.",
     "images": [
       {
         "src": "/content/products/membrane-sanded-1.webp",
@@ -13,14 +13,8 @@
       },
       {
         "src": "/content/products/membrane-sanded-3.webp",
-        "alt": "Membrane bakar Bitumax"
-      }
-    ]
-  },
-  {
-    "title": "Membrane Bakar Granule",
-    "description": "Lapisan granule untuk ketahanan UV dan finishing elegan.",
-    "images": [
+        "alt": "Membrane bakar sanded roll"
+      },
       {
         "src": "/content/products/membrane-granule-1.webp",
         "alt": "Membrane bakar granule"
@@ -32,13 +26,7 @@
       {
         "src": "/content/products/membrane-granule-3.webp",
         "alt": "Membrane granule premium"
-      }
-    ]
-  },
-  {
-    "title": "Membrane Bakar Bitumax",
-    "description": "Produk membrane bakar merk Insutec Bitumax.",
-    "images": [
+      },
       {
         "src": "/content/products/bitumax-1.webp",
         "alt": "Membrane bakar Bitumax"
@@ -112,16 +100,16 @@
     "description": "Solusi lantai industri yang kuat dan mudah perawatan.",
     "images": [
       {
-        "src": "/content/products/epoxy-1.webp",
-        "alt": "Epoxy flooring"
+        "src": "/content/products/injeksi-tools-1.webp",
+        "alt": "Tabung injeksi"
       },
       {
-        "src": "/content/products/epoxy-2.webp",
-        "alt": "Aplikasi epoxy flooring"
+        "src": "/content/products/injeksi-tools-2.webp",
+        "alt": "Mesin injeksi"
       },
       {
-        "src": "/content/products/epoxy-3.webp",
-        "alt": "Finishing epoxy"
+        "src": "/content/products/injeksi-tools-3.webp",
+        "alt": "Peralatan injeksi"
       }
     ]
   }
