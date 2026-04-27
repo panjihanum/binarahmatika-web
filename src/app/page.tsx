@@ -27,7 +27,7 @@ const structuredData = {
       name: "Bina Rahmatika Group",
       url: "https://binarahmatika.com",
       logo: "https://binarahmatika.com/assets/legacy/optimized/logos/logo-bin.webp",
-      email: "binarahmatika.waterproofing@gmail.com",
+      email: "binarahmatikagroup@gmail.com",
       sameAs: [
         `https://wa.me/${WA_PRIMARY}`,
         `https://wa.me/${WA_SECONDARY}`,
@@ -328,7 +328,7 @@ export default function Home() {
                     <div>
                       <p className="text-xs uppercase text-zinc-400">Email</p>
                       <p className="text-sm font-semibold">
-                        binarahmatika.waterproofing@gmail.com
+                        binarahmatikagroup@gmail.com
                       </p>
                     </div>
                   </div>
@@ -366,7 +366,7 @@ export default function Home() {
                     WhatsApp 0812-9521-1826
                   </a>
                   <a
-                    href="mailto:binarahmatika.waterproofing@gmail.com"
+                    href="mailto:binarahmatikagroup@gmail.com"
                     className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                   >
                     Email
