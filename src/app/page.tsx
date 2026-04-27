@@ -4,40 +4,13 @@ import { FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 import { FadeUp } from "@/components/fade-up";
-import { ImageCarousel } from "@/components/image-carousel";
+import { ProductGallery } from "@/components/product-gallery";
 import { ServiceGallery } from "@/components/service-gallery";
 import { ProjectPortfolio } from "@/components/project-portfolio";
 import { VideoSection } from "@/components/video-section";
 
 const WA_PRIMARY = "6287897553952";
 const WA_SECONDARY = "6281295211826";
-
-const featuredMaterials = [
-  {
-    title: "Membrane Bakar",
-    image: "/assets/legacy/optimized/images/membrane-bakar-sanded.webp",
-    bullets: [
-      "Waterproofing berbasis bitumen untuk perlindungan maksimal area atap & dak beton",
-      "Tahan lama & cocok untuk proyek skala besar",
-    ],
-  },
-  {
-    title: "Aspal Emulsi",
-    image: "/assets/legacy/optimized/images/membrane-bakar-granule.webp",
-    bullets: [
-      "Digunakan sebagai primer & lapisan pelindung",
-      "Meningkatkan daya rekat sistem waterproofing",
-    ],
-  },
-  {
-    title: "Tabung Injeksi & Peralatan",
-    image: "/assets/legacy/optimized/images/Injeksi-grouting.webp",
-    bullets: [
-      "Digunakan untuk proses injeksi beton & grouting",
-      "Mendukung pekerjaan perbaikan struktur secara efisien",
-    ],
-  },
-];
 
 const highlights = [
   "Berpengalaman menangani proyek bocor & retak sejak 1991",
@@ -290,42 +263,7 @@ export default function Home() {
                 </p>
               </div>
             </FadeUp>
-            <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-              <FadeUp>
-                <ImageCarousel />
-              </FadeUp>
-              <div className="grid gap-6">
-                {featuredMaterials.map((item, index) => (
-                  <FadeUp key={item.title} delay={0.05 * index}>
-                    <div className="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        width={420}
-                        height={280}
-                        className="h-40 w-full object-cover"
-                      />
-                      <div className="p-5">
-                        <p className="text-xs font-semibold text-amber-600">
-                          {index + 1}. {item.title}
-                        </p>
-                        <ul className="mt-3 space-y-2 text-sm text-zinc-600">
-                          {item.bullets.map((line) => (
-                            <li key={line} className="flex gap-2">
-                              <span
-                                className="mt-2 h-1 w-1 shrink-0 rounded-full bg-zinc-400"
-                                aria-hidden
-                              />
-                              <span>{line}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </FadeUp>
-                ))}
-              </div>
-            </div>
+            <ProductGallery />
           </div>
         </section>
 

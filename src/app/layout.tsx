@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -42,12 +43,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon.jpg",
-        type: "image/jpeg",
+        url: "/icon.png",
+        type: "image/png",
       },
     ],
-    shortcut: ["/icon.jpg"],
-    apple: ["/icon.jpg"],
+    shortcut: ["/icon.png"],
+    apple: ["/icon.png"],
   },
   robots: {
     index: true,
@@ -97,6 +98,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-E5M6E3WQFD"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-E5M6E3WQFD');
+        `}
+      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -66,27 +66,68 @@ function ServiceCard({ title, description, bullets, icon, images }: ServiceCardP
           ))}
         </ul>
       ) : null}
-      <div className="mt-5 flex-1 grid grid-cols-2 gap-2 sm:gap-3">
-        {images.map((image, index) => (
+      <div className="mt-5 grid grid-cols-2 gap-2 sm:gap-3">
+        {images.length === 1 && (
+          <button
+            type="button"
+            onClick={() => openAt(0)}
+            className="group relative col-span-2 aspect-video w-full overflow-hidden rounded-2xl border border-zinc-200/80 bg-zinc-100"
+          >
+            <Image src={images[0].src} alt={images[0].alt} fill className="object-cover transition duration-500 group-hover:scale-[1.04]" />
+            <span className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+          </button>
+        )}
+
+        {images.length === 2 && images.map((image, i) => (
           <button
             key={image.src}
             type="button"
-            onClick={() => openAt(index)}
-            className={`group relative w-full overflow-hidden rounded-2xl border border-zinc-200/80 bg-zinc-100 shadow-inner ${
-              images.length === 3 && index === 2
-                ? "col-span-2 aspect-[21/9] sm:aspect-[24/9]"
-                : "aspect-[4/3]"
-            }`}
+            onClick={() => openAt(i)}
+            className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-zinc-200/80 bg-zinc-100"
           >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              className="object-cover transition duration-500 group-hover:scale-[1.04]"
-            />
+            <Image src={image.src} alt={image.alt} fill className="object-cover transition duration-500 group-hover:scale-[1.04]" />
             <span className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
           </button>
         ))}
+
+        {images.length >= 3 && (
+          <>
+            {/* First image — full width */}
+            <button
+              type="button"
+              onClick={() => openAt(0)}
+              className="group relative col-span-2 aspect-video w-full overflow-hidden rounded-2xl border border-zinc-200/80 bg-zinc-100"
+            >
+              <Image src={images[0].src} alt={images[0].alt} fill className="object-cover transition duration-500 group-hover:scale-[1.04]" />
+              <span className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+            </button>
+
+            {/* Second image */}
+            <button
+              type="button"
+              onClick={() => openAt(1)}
+              className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-zinc-200/80 bg-zinc-100"
+            >
+              <Image src={images[1].src} alt={images[1].alt} fill className="object-cover transition duration-500 group-hover:scale-[1.04]" />
+              <span className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+            </button>
+
+            {/* Third image with "+N" badge if more exist */}
+            <button
+              type="button"
+              onClick={() => openAt(2)}
+              className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-zinc-200/80 bg-zinc-100"
+            >
+              <Image src={images[2].src} alt={images[2].alt} fill className="object-cover transition duration-500 group-hover:scale-[1.04]" />
+              <span className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+              {images.length > 3 && (
+                <span className="absolute inset-0 flex items-center justify-center bg-black/50">
+                  <span className="text-lg font-bold text-white">+{images.length - 3}</span>
+                </span>
+              )}
+            </button>
+          </>
+        )}
       </div>
       <button
         type="button"

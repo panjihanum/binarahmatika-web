@@ -2,7 +2,7 @@
   {
     "title": "Waterproofing System",
     "description": "Solusi perlindungan bangunan dari kebocoran dengan berbagai metode sesuai kondisi proyek",
-    "bullets": ["Membrane Bakar", "Coating System"],
+    "bullets": ["Membrane Bakar", "Coating System", "Struktur Vertikal"],
     "icon": "Droplets",
     "images": [
       {
@@ -10,8 +10,20 @@
         "alt": "Aplikasi membrane bakar di atap datar"
       },
       {
+        "src": "/assets/images/waterproofing-coating-system.png",
+        "alt": "Sistem waterproofing coating pada permukaan beton"
+      },
+      {
+        "src": "/assets/images/waterproofing-struktur-vertikal.png",
+        "alt": "Waterproofing pada struktur vertikal dan dinding"
+      },
+      {
         "src": "/content/products/membrane-sanded-1.webp",
-        "alt": "Aplikasi coating system waterproofing"
+        "alt": "Produk membrane bakar sanded"
+      },
+      {
+        "src": "/content/products/membrane-granule-1.webp",
+        "alt": "Produk membrane bakar granule"
       }
     ]
   },
@@ -26,16 +38,20 @@
     "icon": "Wrench",
     "images": [
       {
-        "src": "/content/products/packer-1.webp",
-        "alt": "Packer injeksi polyurethane untuk perbaikan retakan"
+        "src": "/assets/images/injeksi-beton-grouting-pekerjaan.png",
+        "alt": "Proses pekerjaan injeksi beton dan grouting di lapangan"
+      },
+      {
+        "src": "/assets/images/injeksi-beton-grouting-inspeksi.png",
+        "alt": "Inspeksi hasil pekerjaan injeksi beton grouting"
       },
       {
         "src": "/content/products/injeksi-tools-2.webp",
         "alt": "Mesin injeksi polyurethane untuk pekerjaan grouting"
       },
       {
-        "src": "/assets/images/waterproofing-struktur-vertikal.png",
-        "alt": "Pekerjaan waterproofing dan pelindungan permukaan pada struktur vertikal skala besar"
+        "src": "/content/products/packer-1.webp",
+        "alt": "Packer injeksi polyurethane untuk perbaikan retakan"
       }
     ]
   },

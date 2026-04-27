@@ -1,116 +1,52 @@
 [
   {
     "title": "Membrane Bakar",
-    "description": "Sistem membrane bakar untuk proteksi atap dan dak beton dengan daya tahan tinggi.",
+    "bullets": [
+      "Waterproofing berbasis bitumen untuk perlindungan maksimal area atap & dak beton",
+      "Tahan lama & cocok untuk proyek skala besar"
+    ],
     "images": [
-      {
-        "src": "/content/products/membrane-sanded-1.webp",
-        "alt": "Membrane bakar sanded"
-      },
-      {
-        "src": "/content/products/membrane-sanded-2.webp",
-        "alt": "Membrane bakar sanded detail"
-      },
-      {
-        "src": "/content/products/membrane-sanded-3.webp",
-        "alt": "Membrane bakar sanded roll"
-      },
-      {
-        "src": "/content/products/membrane-granule-1.webp",
-        "alt": "Membrane bakar granule"
-      },
-      {
-        "src": "/content/products/membrane-granule-2.webp",
-        "alt": "Membrane granule detail"
-      },
-      {
-        "src": "/content/products/membrane-granule-3.webp",
-        "alt": "Membrane granule premium"
-      },
-      {
-        "src": "/content/products/bitumax-1.webp",
-        "alt": "Membrane bakar Bitumax"
-      },
-      {
-        "src": "/content/products/bitumax-2.webp",
-        "alt": "Membrane Bitumax granule"
-      },
-      {
-        "src": "/content/products/bitumax-3.webp",
-        "alt": "Membrane Bitumax roll"
-      }
+      { "src": "/content/products/membrane-sanded-1.webp", "alt": "Membrane bakar sanded" },
+      { "src": "/content/products/membrane-sanded-2.webp", "alt": "Membrane bakar sanded detail" },
+      { "src": "/content/products/membrane-sanded-3.webp", "alt": "Membrane bakar sanded roll" },
+      { "src": "/content/products/membrane-granule-1.webp", "alt": "Membrane bakar granule" },
+      { "src": "/content/products/membrane-granule-2.webp", "alt": "Membrane granule detail" },
+      { "src": "/content/products/membrane-granule-3.webp", "alt": "Membrane granule premium" },
+      { "src": "/content/products/bitumax-1.webp", "alt": "Membrane bakar Bitumax" },
+      { "src": "/content/products/bitumax-2.webp", "alt": "Membrane Bitumax granule" },
+      { "src": "/content/products/bitumax-3.webp", "alt": "Membrane Bitumax roll" },
+      { "src": "/assets/images/waterproofing-membrane-bakar.png", "alt": "Aplikasi waterproofing membrane bakar di lapangan" },
+      { "src": "/assets/images/waterproofing-coating-system.png", "alt": "Sistem waterproofing coating" },
+      { "src": "/assets/images/waterproofing-struktur-vertikal.png", "alt": "Waterproofing struktur vertikal" }
     ]
   },
   {
-    "title": "Primer Aspal Emulsi Integral",
-    "description": "Aspal emulsi cair siap pakai untuk primer coating.",
+    "title": "Aspal Emulsi",
+    "bullets": [
+      "Digunakan sebagai primer & lapisan pelindung",
+      "Meningkatkan daya rekat sistem waterproofing"
+    ],
     "images": [
-      {
-        "src": "/content/products/integral-1.webp",
-        "alt": "Primer aspal emulsi"
-      },
-      {
-        "src": "/content/products/integral-2.webp",
-        "alt": "Primer aspal emulsi detail"
-      },
-      {
-        "src": "/content/products/integral-3.webp",
-        "alt": "Produk primer aspal emulsi"
-      }
+      { "src": "/content/products/integral-1.webp", "alt": "Primer aspal emulsi" },
+      { "src": "/content/products/integral-2.webp", "alt": "Primer aspal emulsi detail" },
+      { "src": "/content/products/integral-3.webp", "alt": "Produk primer aspal emulsi" }
     ]
   },
   {
-    "title": "Packer Injeksi Polyurethane",
-    "description": "Packer injeksi PU berbagai ukuran untuk perbaikan bocor.",
+    "title": "Tabung Injeksi & Peralatan",
+    "bullets": [
+      "Digunakan untuk proses injeksi beton & grouting",
+      "Mendukung pekerjaan perbaikan struktur secara efisien"
+    ],
     "images": [
-      {
-        "src": "/content/products/packer-1.webp",
-        "alt": "Packer injeksi polyurethane"
-      },
-      {
-        "src": "/content/products/packer-2.webp",
-        "alt": "Packer injeksi PU detail"
-      },
-      {
-        "src": "/content/products/packer-3.webp",
-        "alt": "Packer injeksi PU"
-      }
-    ]
-  },
-  {
-    "title": "Tabung & Mesin Injeksi",
-    "description": "Peralatan injeksi grouting dan polyurethane untuk proyek.",
-    "images": [
-      {
-        "src": "/content/products/injeksi-tools-1.webp",
-        "alt": "Peralatan injeksi beton"
-      },
-      {
-        "src": "/content/products/injeksi-tools-2.webp",
-        "alt": "Mesin injeksi polyurethane"
-      },
-      {
-        "src": "/content/products/injeksi-tools-3.webp",
-        "alt": "Peralatan injeksi"
-      }
-    ]
-  },
-  {
-    "title": "Epoxy Flooring & Ucrete",
-    "description": "Solusi lantai industri yang kuat dan mudah perawatan.",
-    "images": [
-      {
-        "src": "/content/products/injeksi-tools-1.webp",
-        "alt": "Tabung injeksi"
-      },
-      {
-        "src": "/content/products/injeksi-tools-2.webp",
-        "alt": "Mesin injeksi"
-      },
-      {
-        "src": "/content/products/injeksi-tools-3.webp",
-        "alt": "Peralatan injeksi"
-      }
+      { "src": "/content/products/injeksi-tools-1.webp", "alt": "Peralatan injeksi beton" },
+      { "src": "/content/products/injeksi-tools-2.webp", "alt": "Mesin injeksi polyurethane" },
+      { "src": "/content/products/injeksi-tools-3.webp", "alt": "Peralatan injeksi grouting" },
+      { "src": "/content/products/packer-1.webp", "alt": "Packer injeksi polyurethane" },
+      { "src": "/content/products/packer-2.webp", "alt": "Packer injeksi PU detail" },
+      { "src": "/content/products/packer-3.webp", "alt": "Packer injeksi PU berbagai ukuran" },
+      { "src": "/assets/images/injeksi-beton-grouting-inspeksi.png", "alt": "Inspeksi pekerjaan injeksi beton grouting" },
+      { "src": "/assets/images/injeksi-beton-grouting-pekerjaan.png", "alt": "Proses pekerjaan injeksi beton dan grouting" }
     ]
   }
 ]
