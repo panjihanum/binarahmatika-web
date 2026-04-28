@@ -18,11 +18,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://binarahmatika.com"),
   title: {
-    default: "Bina Rahmatika Group | Waterproofing & Injeksi Beton",
+    default:
+      "Bina Rahmatika Group | Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring Bekasi",
     template: "%s | Bina Rahmatika Group",
   },
   description:
-    "Kontraktor khusus jasa dan distributor waterproofing membrane bakar, coating, primer aspal emulsi, injeksi beton, grouting, polyurethane, dan epoxy flooring.",
+    "Bina Rahmatika Group — kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani proyek industri, komersial, dan residensial di seluruh Indonesia.",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -33,21 +34,36 @@ export const metadata: Metadata = {
   keywords: [
     "bina rahmatika",
     "binarahmatika",
-    "waterproofing",
-    "membrane bakar",
-    "injeksi beton",
-    "grouting",
-    "polyurethane",
-    "epoxy flooring",
+    "waterproofing bekasi",
+    "waterproofing jakarta",
+    "waterproofing indonesia",
     "kontraktor waterproofing",
+    "distributor waterproofing",
+    "membrane bakar",
+    "waterproofing membrane",
+    "injeksi beton",
+    "grouting beton",
+    "polyurethane injection",
+    "epoxy flooring",
+    "lantai epoxy",
     "primer aspal emulsi",
+    "waterproofing coating",
+    "perbaikan bocor",
+    "atap bocor",
+    "dak bocor",
+    "chemical construction",
+    "kontraktor bekasi",
+    "kontraktor jakarta",
+    "waterproofing murah berkualitas",
+    "jasa waterproofing",
+    "aplikator epoxy",
   ],
   category: "construction",
   authors: [{ name: "Bina Rahmatika Group", url: "https://binarahmatika.com" }],
   creator: "Bina Rahmatika Group",
   publisher: "Bina Rahmatika Group",
   alternates: {
-    canonical: "/",
+    canonical: "https://binarahmatika.com",
   },
   icons: {
     icon: [
@@ -72,19 +88,21 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Bina Rahmatika Group | Waterproofing & Injeksi Beton",
+    title:
+      "Bina Rahmatika Group | Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring",
     description:
-      "Kontraktor khusus jasa dan distributor waterproofing membrane bakar, coating, primer aspal emulsi, injeksi beton, grouting, polyurethane, dan epoxy flooring.",
+      "Kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani seluruh Indonesia.",
     type: "website",
-    url: "/",
+    url: "https://binarahmatika.com",
     siteName: "Bina Rahmatika Group",
     locale: "id_ID",
     images: [
       {
-        url: "/opengraph-image",
+        url: "https://binarahmatika.com/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Bina Rahmatika Group - Spesialis Waterproofing, Injeksi Beton, dan Epoxy Flooring",
+        alt: "Bina Rahmatika Group - Spesialis Waterproofing, Injeksi Beton, dan Epoxy Flooring sejak 1991",
+        type: "image/png",
       },
     ],
   },
@@ -92,10 +110,30 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@binarahmatika",
     creator: "@binarahmatika",
-    title: "Bina Rahmatika Group | Waterproofing & Injeksi Beton",
+    title:
+      "Bina Rahmatika Group | Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring",
     description:
-      "Kontraktor khusus jasa dan distributor waterproofing membrane bakar, coating, primer aspal emulsi, injeksi beton, grouting, polyurethane, dan epoxy flooring.",
-    images: ["/twitter-image"],
+      "Kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani seluruh Indonesia.",
+    images: [
+      {
+        url: "https://binarahmatika.com/twitter-image",
+        width: 1200,
+        height: 630,
+        alt: "Bina Rahmatika Group - Spesialis Waterproofing, Injeksi Beton, dan Epoxy Flooring",
+      },
+    ],
+  },
+  other: {
+    "geo.region": "ID-JB",
+    "geo.placename": "Bekasi, Jawa Barat, Indonesia",
+    "geo.position": "-6.2382;107.0016",
+    ICBM: "-6.2382, 107.0016",
+    "og:phone_number": "+6287765698279",
+    "og:email": "binarahmatikagroup@gmail.com",
+    "og:street-address": "Jl. Raya Setu Bekasi Timur Regency Blok D1/12A",
+    "og:locality": "Bekasi",
+    "og:region": "Jawa Barat",
+    "og:country-name": "Indonesia",
   },
 };
 

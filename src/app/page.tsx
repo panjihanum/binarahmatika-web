@@ -25,33 +25,180 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "WebSite",
+      "@id": "https://binarahmatika.com/#website",
       name: "Bina Rahmatika Group",
       url: "https://binarahmatika.com",
-      logo: "https://binarahmatika.com/assets/legacy/optimized/logos/logo-bin.webp",
+      description:
+        "Spesialis waterproofing, injeksi beton, grouting, polyurethane, dan epoxy flooring untuk proyek industri, komersial, dan residensial.",
+      publisher: { "@id": "https://binarahmatika.com/#organization" },
+      inLanguage: "id-ID",
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://binarahmatika.com/#webpage",
+      url: "https://binarahmatika.com",
+      name: "Bina Rahmatika Group | Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring Bekasi",
+      description:
+        "Kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani seluruh Indonesia.",
+      isPartOf: { "@id": "https://binarahmatika.com/#website" },
+      about: { "@id": "https://binarahmatika.com/#organization" },
+      inLanguage: "id-ID",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://binarahmatika.com/#organization",
+      name: "Bina Rahmatika Group",
+      url: "https://binarahmatika.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://binarahmatika.com/assets/legacy/optimized/logos/logo-bin.webp",
+        width: 140,
+        height: 28,
+      },
       email: "binarahmatikagroup@gmail.com",
+      telephone: [WA_PRIMARY_DISPLAY, WA_SECONDARY_DISPLAY],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Jl. Raya Setu Bekasi Timur Regency Blok D1/12A",
+        addressLocality: "Bekasi",
+        addressRegion: "Jawa Barat",
+        addressCountry: "ID",
+      },
       sameAs: [`https://wa.me/${WA_PRIMARY}`, `https://wa.me/${WA_SECONDARY}`],
+      foundingDate: "1991",
+      areaServed: { "@type": "Country", name: "Indonesia" },
     },
     {
       "@type": "LocalBusiness",
+      "@id": "https://binarahmatika.com/#localbusiness",
       name: "Bina Rahmatika Group",
       url: "https://binarahmatika.com",
-      image: "https://binarahmatika.com/assets/images/hero-home-spesialis.png",
+      image: [
+        "https://binarahmatika.com/assets/images/hero-home-spesialis.png",
+        "https://binarahmatika.com/assets/images/tentang-kami-proyek.png",
+      ],
       description:
         "Spesialis waterproofing, injeksi beton, grouting, polyurethane, dan epoxy flooring untuk proyek industri, komersial, dan residensial.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Jl. Raya Setu Bekasi Timur Regency Blok D1/12A",
         addressLocality: "Bekasi",
+        addressRegion: "Jawa Barat",
+        postalCode: "17520",
         addressCountry: "ID",
       },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: -6.2382,
+        longitude: 107.0016,
+      },
       telephone: [WA_PRIMARY_DISPLAY, WA_SECONDARY_DISPLAY],
-      areaServed: "Indonesia",
-      serviceType: [
-        "Waterproofing Membrane Bakar",
-        "Injeksi Beton",
-        "Grouting",
-        "Epoxy Flooring",
+      email: "binarahmatikagroup@gmail.com",
+      areaServed: { "@type": "Country", name: "Indonesia" },
+      foundingDate: "1991",
+      priceRange: "$$",
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "17:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Saturday"],
+          opens: "08:00",
+          closes: "14:00",
+        },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Layanan Waterproofing & Konstruksi",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Waterproofing Membrane Bakar",
+              description:
+                "Pemasangan waterproofing membrane bakar untuk atap, dak beton, dan struktur bawah tanah.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Injeksi Beton",
+              description:
+                "Perbaikan retak dan kebocoran beton dengan metode injeksi polyurethane dan epoxy.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Grouting",
+              description:
+                "Pengisian celah dan rongga pada struktur beton dengan material grouting berkualitas.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Epoxy Flooring",
+              description:
+                "Aplikasi lantai epoxy untuk industri, gudang, pabrik, dan ruang komersial.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Waterproofing Coating",
+              description:
+                "Aplikasi coating waterproofing untuk perlindungan permukaan beton dan tembok.",
+            },
+          },
+        ],
+      },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Apa saja layanan utama Bina Rahmatika Group?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bina Rahmatika Group menyediakan layanan waterproofing membrane bakar, injeksi beton, grouting, polyurethane injection, epoxy flooring, dan distribusi material chemical construction berkualitas.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah Bina Rahmatika Group melayani proyek di luar Bekasi?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ya, kami melayani proyek di seluruh Indonesia, termasuk Jakarta, Jawa Barat, Jawa Tengah, Jawa Timur, Sumatera, Kalimantan, dan wilayah lainnya.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sudah berapa lama Bina Rahmatika Group beroperasi?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bina Rahmatika Group telah berpengalaman sejak tahun 1991 dalam bidang waterproofing, injeksi beton, dan chemical construction.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Bagaimana cara menghubungi Bina Rahmatika Group?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: `Anda dapat menghubungi kami melalui WhatsApp di ${WA_PRIMARY_DISPLAY} atau melalui email binarahmatikagroup@gmail.com. Konsultasi gratis tersedia.`,
+          },
+        },
       ],
     },
   ],
