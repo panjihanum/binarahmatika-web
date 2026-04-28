@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   },
   description:
     "Kontraktor khusus jasa dan distributor waterproofing membrane bakar, coating, primer aspal emulsi, injeksi beton, grouting, polyurethane, dan epoxy flooring.",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   applicationName: "Bina Rahmatika Group",
   keywords: [
     "bina rahmatika",
@@ -40,6 +46,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Bina Rahmatika Group", url: "https://binarahmatika.com" }],
   creator: "Bina Rahmatika Group",
   publisher: "Bina Rahmatika Group",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       {
@@ -67,27 +76,26 @@ export const metadata: Metadata = {
     description:
       "Kontraktor khusus jasa dan distributor waterproofing membrane bakar, coating, primer aspal emulsi, injeksi beton, grouting, polyurethane, dan epoxy flooring.",
     type: "website",
-    url: "https://binarahmatika.com",
+    url: "/",
     siteName: "Bina Rahmatika Group",
     locale: "id_ID",
     images: [
       {
-        url: "/assets/images/hero-home-spesialis.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Bina Rahmatika Group - Waterproofing, Injeksi Beton, dan Epoxy Flooring",
+        alt: "Bina Rahmatika Group - Spesialis Waterproofing, Injeksi Beton, dan Epoxy Flooring",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@binarahmatika",
+    creator: "@binarahmatika",
     title: "Bina Rahmatika Group | Waterproofing & Injeksi Beton",
     description:
       "Kontraktor khusus jasa dan distributor waterproofing membrane bakar, coating, primer aspal emulsi, injeksi beton, grouting, polyurethane, dan epoxy flooring.",
-    images: ["/assets/images/hero-home-spesialis.png"],
-  },
-  alternates: {
-    canonical: "https://binarahmatika.com",
+    images: ["/twitter-image"],
   },
 };
 

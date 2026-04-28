@@ -9,8 +9,10 @@ import { ServiceGallery } from "@/components/service-gallery";
 import { ProjectPortfolio } from "@/components/project-portfolio";
 import { VideoSection } from "@/components/video-section";
 
-const WA_PRIMARY = "6287897553952";
-const WA_SECONDARY = "6281295211826";
+const WA_PRIMARY = "6287765698279";
+const WA_SECONDARY = "6287765698279";
+const WA_PRIMARY_DISPLAY = "+62 877-6569-8279";
+const WA_SECONDARY_DISPLAY = "+62 877-6569-8279";
 
 const highlights = [
   "Berpengalaman menangani proyek bocor & retak sejak 1991",
@@ -28,10 +30,7 @@ const structuredData = {
       url: "https://binarahmatika.com",
       logo: "https://binarahmatika.com/assets/legacy/optimized/logos/logo-bin.webp",
       email: "binarahmatikagroup@gmail.com",
-      sameAs: [
-        `https://wa.me/${WA_PRIMARY}`,
-        `https://wa.me/${WA_SECONDARY}`,
-      ],
+      sameAs: [`https://wa.me/${WA_PRIMARY}`, `https://wa.me/${WA_SECONDARY}`],
     },
     {
       "@type": "LocalBusiness",
@@ -46,7 +45,7 @@ const structuredData = {
         addressLocality: "Bekasi",
         addressCountry: "ID",
       },
-      telephone: ["0878-9755-3952", "0812-9521-1826"],
+      telephone: [WA_PRIMARY_DISPLAY, WA_SECONDARY_DISPLAY],
       areaServed: "Indonesia",
       serviceType: [
         "Waterproofing Membrane Bakar",
@@ -307,18 +306,28 @@ export default function Home() {
                       <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
                         Hubungi via WhatsApp
                       </p>
-                      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                      <div className="mt-3 grid gap-3 sm:grid-cols-2">
                         <a
                           href={`https://wa.me/${WA_PRIMARY}`}
-                          className="text-sm font-semibold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-white"
+                          className="group/wa rounded-xl border border-emerald-300/20 bg-emerald-500/10 p-3 transition hover:border-emerald-300/40 hover:bg-emerald-500/15"
                         >
-                          0878-9755-3952
+                          <p className="text-[11px] font-semibold uppercase tracking-wide text-emerald-200/80">
+                            Admin 1
+                          </p>
+                          <p className="mt-1 text-sm font-semibold text-white underline decoration-white/30 underline-offset-2 transition group-hover/wa:decoration-white">
+                            {WA_PRIMARY_DISPLAY}
+                          </p>
                         </a>
                         <a
                           href={`https://wa.me/${WA_SECONDARY}`}
-                          className="text-sm font-semibold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-white"
+                          className="group/wa rounded-xl border border-emerald-300/20 bg-emerald-500/10 p-3 transition hover:border-emerald-300/40 hover:bg-emerald-500/15"
                         >
-                          0812-9521-1826
+                          <p className="text-[11px] font-semibold uppercase tracking-wide text-emerald-200/80">
+                            Admin 2
+                          </p>
+                          <p className="mt-1 text-sm font-semibold text-white underline decoration-white/30 underline-offset-2 transition group-hover/wa:decoration-white">
+                            {WA_SECONDARY_DISPLAY}
+                          </p>
                         </a>
                       </div>
                     </div>
@@ -356,14 +365,14 @@ export default function Home() {
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/50 bg-emerald-500/10 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/20"
                   >
                     <FaWhatsapp className="h-4 w-4" />
-                    WhatsApp 0878-9755-3952
+                    WhatsApp Admin 1 ({WA_PRIMARY_DISPLAY})
                   </a>
                   <a
                     href={`https://wa.me/${WA_SECONDARY}`}
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/50 bg-emerald-500/10 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/20"
                   >
                     <FaWhatsapp className="h-4 w-4" />
-                    WhatsApp 0812-9521-1826
+                    WhatsApp Admin 2 ({WA_SECONDARY_DISPLAY})
                   </a>
                   <a
                     href="mailto:binarahmatikagroup@gmail.com"

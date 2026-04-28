@@ -6,18 +6,54 @@
       "Tahan lama & cocok untuk proyek skala besar"
     ],
     "images": [
-      { "src": "/content/products/membrane-sanded-1.webp", "alt": "Membrane bakar sanded" },
-      { "src": "/content/products/membrane-sanded-2.webp", "alt": "Membrane bakar sanded detail" },
-      { "src": "/content/products/membrane-sanded-3.webp", "alt": "Membrane bakar sanded roll" },
-      { "src": "/content/products/membrane-granule-1.webp", "alt": "Membrane bakar granule" },
-      { "src": "/content/products/membrane-granule-2.webp", "alt": "Membrane granule detail" },
-      { "src": "/content/products/membrane-granule-3.webp", "alt": "Membrane granule premium" },
-      { "src": "/content/products/bitumax-1.webp", "alt": "Membrane bakar Bitumax" },
-      { "src": "/content/products/bitumax-2.webp", "alt": "Membrane Bitumax granule" },
-      { "src": "/content/products/bitumax-3.webp", "alt": "Membrane Bitumax roll" },
-      { "src": "/assets/images/waterproofing-membrane-bakar.png", "alt": "Aplikasi waterproofing membrane bakar di lapangan" },
-      { "src": "/assets/images/waterproofing-coating-system.png", "alt": "Sistem waterproofing coating" },
-      { "src": "/assets/images/waterproofing-struktur-vertikal.png", "alt": "Waterproofing struktur vertikal" }
+      {
+        "src": "/content/products/membrane-sanded-1.webp",
+        "alt": "Membrane bakar sanded"
+      },
+      {
+        "src": "/content/products/membrane-sanded-2.webp",
+        "alt": "Membrane bakar sanded detail"
+      },
+      {
+        "src": "/content/products/membrane-sanded-3.webp",
+        "alt": "Membrane bakar sanded roll"
+      },
+      {
+        "src": "/content/products/membrane-granule-1.webp",
+        "alt": "Membrane bakar granule"
+      },
+      {
+        "src": "/content/products/membrane-granule-2.webp",
+        "alt": "Membrane granule detail"
+      },
+      {
+        "src": "/content/products/membrane-granule-3.webp",
+        "alt": "Membrane granule premium"
+      },
+      {
+        "src": "/content/products/bitumax-1.webp",
+        "alt": "Membrane bakar Bitumax"
+      },
+      {
+        "src": "/content/products/bitumax-2.webp",
+        "alt": "Membrane Bitumax granule"
+      },
+      {
+        "src": "/content/products/bitumax-3.webp",
+        "alt": "Membrane Bitumax roll"
+      },
+      {
+        "src": "/assets/images/waterproofing-membrane-bakar.png",
+        "alt": "Aplikasi waterproofing membrane bakar di lapangan"
+      },
+      {
+        "src": "/assets/images/waterproofing-coating-system.png",
+        "alt": "Sistem waterproofing coating"
+      },
+      {
+        "src": "/assets/images/waterproofing-struktur-vertikal.png",
+        "alt": "Waterproofing struktur vertikal"
+      }
     ]
   },
   {
@@ -27,9 +63,34 @@
       "Meningkatkan daya rekat sistem waterproofing"
     ],
     "images": [
-      { "src": "/content/products/integral-1.webp", "alt": "Primer aspal emulsi" },
-      { "src": "/content/products/integral-2.webp", "alt": "Primer aspal emulsi detail" },
-      { "src": "/content/products/integral-3.webp", "alt": "Produk primer aspal emulsi" }
+      {
+        "src": "/content/products/integral-1.webp",
+        "alt": "Primer aspal emulsi"
+      },
+      {
+        "src": "/content/products/integral-2.webp",
+        "alt": "Primer aspal emulsi detail"
+      },
+      {
+        "src": "/content/products/integral-3.webp",
+        "alt": "Produk primer aspal emulsi"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/integral.webp",
+        "alt": "Poster spesifikasi aspal emulsi Integral"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/integral-1.webp",
+        "alt": "Produk aspal emulsi Integral di gudang"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/BRG11.webp",
+        "alt": "Produk aspal emulsi Integral kemasan pail"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/BRG13-1.webp",
+        "alt": "Stok produk aspal emulsi Integral"
+      }
     ]
   },
   {
@@ -39,14 +100,50 @@
       "Mendukung pekerjaan perbaikan struktur secara efisien"
     ],
     "images": [
-      { "src": "/content/products/injeksi-tools-1.webp", "alt": "Peralatan injeksi beton" },
-      { "src": "/content/products/injeksi-tools-2.webp", "alt": "Mesin injeksi polyurethane" },
-      { "src": "/content/products/injeksi-tools-3.webp", "alt": "Peralatan injeksi grouting" },
-      { "src": "/content/products/packer-1.webp", "alt": "Packer injeksi polyurethane" },
-      { "src": "/content/products/packer-2.webp", "alt": "Packer injeksi PU detail" },
-      { "src": "/content/products/packer-3.webp", "alt": "Packer injeksi PU berbagai ukuran" },
-      { "src": "/assets/images/injeksi-beton-grouting-inspeksi.png", "alt": "Inspeksi pekerjaan injeksi beton grouting" },
-      { "src": "/assets/images/injeksi-beton-grouting-pekerjaan.png", "alt": "Proses pekerjaan injeksi beton dan grouting" }
+      {
+        "src": "/assets/legacy/optimized/images/binarahmatika21.webp",
+        "alt": "Tabung injeksi merah untuk pekerjaan injeksi beton"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/binarahmatika38.webp",
+        "alt": "Tabung injeksi merah unit siap pakai"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/binarahmatika49.webp",
+        "alt": "Tabung injeksi merah untuk grouting"
+      },
+      {
+        "src": "/assets/legacy/optimized/images/injeksi-betone.webp",
+        "alt": "Peralatan tabung injeksi beton warna merah"
+      },
+      {
+        "src": "/content/products/injeksi-tools-1.webp",
+        "alt": "Peralatan injeksi beton"
+      },
+      {
+        "src": "/content/products/injeksi-tools-2.webp",
+        "alt": "Mesin injeksi polyurethane"
+      },
+      {
+        "src": "/content/products/packer-1.webp",
+        "alt": "Packer injeksi polyurethane"
+      },
+      {
+        "src": "/content/products/packer-2.webp",
+        "alt": "Packer injeksi PU detail"
+      },
+      {
+        "src": "/content/products/packer-3.webp",
+        "alt": "Packer injeksi PU berbagai ukuran"
+      },
+      {
+        "src": "/assets/images/injeksi-beton-grouting-inspeksi.png",
+        "alt": "Inspeksi pekerjaan injeksi beton grouting"
+      },
+      {
+        "src": "/assets/images/injeksi-beton-grouting-pekerjaan.png",
+        "alt": "Proses pekerjaan injeksi beton dan grouting"
+      }
     ]
   }
 ]
