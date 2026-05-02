@@ -10,9 +10,9 @@ import { ProjectPortfolio } from "@/components/project-portfolio";
 import { VideoSection } from "@/components/video-section";
 
 const WA_PRIMARY = "6287765698279";
-const WA_SECONDARY = "6287765698279";
+const WA_SECONDARY = "6281295211826";
 const WA_PRIMARY_DISPLAY = "+62 877-6569-8279";
-const WA_SECONDARY_DISPLAY = "+62 877-6569-8279";
+const WA_SECONDARY_DISPLAY = "+62 812-9521-1826";
 
 const highlights = [
   "Berpengalaman menangani proyek bocor & retak sejak 1991",
@@ -26,33 +26,33 @@ const structuredData = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://binarahmatika.com/#website",
+      "@id": "https://binarahmatika-group.com/#website",
       name: "Bina Rahmatika Group",
-      url: "https://binarahmatika.com",
+      url: "https://binarahmatika-group.com",
       description:
         "Spesialis waterproofing, injeksi beton, grouting, polyurethane, dan epoxy flooring untuk proyek industri, komersial, dan residensial.",
-      publisher: { "@id": "https://binarahmatika.com/#organization" },
+      publisher: { "@id": "https://binarahmatika-group.com/#organization" },
       inLanguage: "id-ID",
     },
     {
       "@type": "WebPage",
-      "@id": "https://binarahmatika.com/#webpage",
-      url: "https://binarahmatika.com",
+      "@id": "https://binarahmatika-group.com/#webpage",
+      url: "https://binarahmatika-group.com",
       name: "Bina Rahmatika Group | Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring Bekasi",
       description:
         "Kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani seluruh Indonesia.",
-      isPartOf: { "@id": "https://binarahmatika.com/#website" },
-      about: { "@id": "https://binarahmatika.com/#organization" },
+      isPartOf: { "@id": "https://binarahmatika-group.com/#website" },
+      about: { "@id": "https://binarahmatika-group.com/#organization" },
       inLanguage: "id-ID",
     },
     {
       "@type": "Organization",
-      "@id": "https://binarahmatika.com/#organization",
+      "@id": "https://binarahmatika-group.com/#organization",
       name: "Bina Rahmatika Group",
-      url: "https://binarahmatika.com",
+      url: "https://binarahmatika-group.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://binarahmatika.com/assets/legacy/optimized/logos/logo-bin.webp",
+        url: "https://binarahmatika-group.com/assets/legacy/optimized/logos/logo-bin.webp",
         width: 140,
         height: 28,
       },
@@ -71,12 +71,12 @@ const structuredData = {
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://binarahmatika.com/#localbusiness",
+      "@id": "https://binarahmatika-group.com/#localbusiness",
       name: "Bina Rahmatika Group",
-      url: "https://binarahmatika.com",
+      url: "https://binarahmatika-group.com",
       image: [
-        "https://binarahmatika.com/assets/images/hero-home-spesialis.png",
-        "https://binarahmatika.com/assets/images/tentang-kami-proyek.png",
+        "https://binarahmatika-group.com/assets/images/hero-home-spesialis.png",
+        "https://binarahmatika-group.com/assets/images/tentang-kami-proyek.png",
       ],
       description:
         "Spesialis waterproofing, injeksi beton, grouting, polyurethane, dan epoxy flooring untuk proyek industri, komersial, dan residensial.",

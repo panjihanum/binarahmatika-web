@@ -5,31 +5,31 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://binarahmatika.com",
+      url: "https://binarahmatika-group.com",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://binarahmatika.com/#layanan",
+      url: "https://binarahmatika-group.com/#layanan",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://binarahmatika.com/#produk",
+      url: "https://binarahmatika-group.com/#produk",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://binarahmatika.com/#project",
+      url: "https://binarahmatika-group.com/#project",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://binarahmatika.com/#kontak",
+      url: "https://binarahmatika-group.com/#kontak",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.7,

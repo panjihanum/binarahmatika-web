@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://binarahmatika.com"),
+  metadataBase: new URL("https://binarahmatika-group.com"),
   title: {
     default:
       "Bina Rahmatika Group | Spesialis Waterproofing, Injeksi Beton & Epoxy Flooring Bekasi",
@@ -59,11 +59,11 @@ export const metadata: Metadata = {
     "aplikator epoxy",
   ],
   category: "construction",
-  authors: [{ name: "Bina Rahmatika Group", url: "https://binarahmatika.com" }],
+  authors: [{ name: "Bina Rahmatika Group", url: "https://binarahmatika-group.com" }],
   creator: "Bina Rahmatika Group",
   publisher: "Bina Rahmatika Group",
   alternates: {
-    canonical: "https://binarahmatika.com",
+    canonical: "https://binarahmatika-group.com",
   },
   icons: {
     icon: [
@@ -93,12 +93,12 @@ export const metadata: Metadata = {
     description:
       "Kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani seluruh Indonesia.",
     type: "website",
-    url: "https://binarahmatika.com",
+    url: "https://binarahmatika-group.com",
     siteName: "Bina Rahmatika Group",
     locale: "id_ID",
     images: [
       {
-        url: "https://binarahmatika.com/opengraph-image",
+        url: "https://binarahmatika-group.com/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Bina Rahmatika Group - Spesialis Waterproofing, Injeksi Beton, dan Epoxy Flooring sejak 1991",
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
       "Kontraktor & distributor resmi waterproofing membrane bakar, injeksi beton, grouting, polyurethane, dan epoxy flooring. Berpengalaman sejak 1991, melayani seluruh Indonesia.",
     images: [
       {
-        url: "https://binarahmatika.com/twitter-image",
+        url: "https://binarahmatika-group.com/twitter-image",
         width: 1200,
         height: 630,
         alt: "Bina Rahmatika Group - Spesialis Waterproofing, Injeksi Beton, dan Epoxy Flooring",

@@ -110,7 +110,7 @@ export default function OpenGraphImage() {
             color: "#f3f4f6",
           }}
         >
-          <span>binarahmatika.com</span>
+          <span>binarahmatika-group.com</span>
           <span>Waterproofing Membrane, Aspal Emulsi, Grouting, PU</span>
         </div>
       </div>

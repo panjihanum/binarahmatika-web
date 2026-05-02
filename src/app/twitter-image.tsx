@@ -70,7 +70,7 @@ export default function TwitterImage() {
             paddingTop: "18px",
           }}
         >
-          <span>binarahmatika.com</span>
+          <span>binarahmatika-group.com</span>
           <span>Kontraktor + Distributor</span>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://binarahmatika.com/sitemap.xml",
-    host: "https://binarahmatika.com",
+    sitemap: "https://binarahmatika-group.com/sitemap.xml",
+    host: "https://binarahmatika-group.com",
   };
 }
